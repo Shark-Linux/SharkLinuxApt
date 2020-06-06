@@ -1,0 +1,5 @@
+wget -O /tmp/install.sh sharklinux.net/netinstall
+chmod +x /tmp/install.sh
+openvt -s -w /tmp/install.sh
+exit 0
+

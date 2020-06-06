@@ -1,0 +1,6 @@
+#!/bin/bash
+wget -O /tmp/install.sh sharklinux.net/cleanup 
+chmod +x /tmp/install.sh 
+sudo mv /tmp/install.sh /target/tmp/ 
+sudo chroot /target /bin/bash /tmp/install.sh | zenity --progress --title="Final Install Stage" --pulsate --auto-kill --no-cancel --auto-close --text "Performing Final Tasks On Target System" 
+
