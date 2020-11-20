@@ -65,6 +65,29 @@ Description: Transitional Bengali language pack for Thunderbird
  This is a transitional package to ensure that upgrades work correctly.
  It can be safely removed
 
+Package: gir1.2-lokdocview-0.1
+Architecture: amd64
+Version: 1:6.2.6-0ubuntu0.16.04.1~lo1
+Priority: optional
+Section: introspection
+Source: libreoffice
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Installed-Size: 21
+Depends: liblibreofficekitgtk (= 1:6.2.6-0ubuntu0.16.04.1~lo1), gir1.2-gdkpixbuf-2.0, gir1.2-glib-2.0, gir1.2-gtk-3.0, libgirepository-1.0-1 (>= 1.41.4-1), libreoffice-core (= 1:6.2.6-0ubuntu0.16.04.1~lo1)
+Filename: ./gir1.2-lokdocview-0.1_6.2.6-0ubuntu0.16.04.1~lo1_amd64.deb
+Size: 4582
+MD5sum: 0e0fee537e3b4b684d1177e9fdd3a60b
+SHA1: 51e21c3bedb8e093ac07d2cc1d318d45fd1b9f75
+SHA256: df84233840800ade4c96a3622366bbd01d8e73de410ec75f292957a6b21d4cc9
+SHA512: 2655f1b755675c5a1a63fec096e56e8fbaee65404f63c9db65be6e97e9520e33d1b67d5f59a6ffb3b6498e4be85a231dda11bc6f9324b6dd6a0d4d2cf2a5d397
+Homepage: http://www.libreoffice.org
+Description: GTK3 widget wrapping LibreOffice functionality - introspection
+ LOKDocView is the GTK3 widget that wraps the libreoffice functionality and
+ exposes a simple API for applications to use this widget.
+ .
+ This package contains the Introspection data.
+
 Package: thunderbird-locale-cy
 Architecture: amd64
 Version: 1:60.0+build4-0ubuntu0.16.04.1
@@ -112,6 +135,32 @@ Description: Linux Containers userspace tools (common tools)
  .
  This package contains a few binaries and security profiles required by
  all liblxc users.
+
+Package: libreoffice-help-sk
+Architecture: all
+Version: 1:6.2.6-0ubuntu0.16.04.1~lo1
+Priority: optional
+Section: doc
+Source: libreoffice-l10n
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Installed-Size: 27223
+Provides: libreoffice-help (= 6.2)
+Depends: libreoffice-l10n-sk, libreoffice-common (>= 1:6.1.0~), libreoffice-writer
+Recommends: libreoffice-core (>> 1:6.2.6)
+Filename: ./libreoffice-help-sk_6.2.6-0ubuntu0.16.04.1~lo1_all.deb
+Size: 3204992
+MD5sum: 3fd304a4de88cf8a95d8d5986bfb6a0e
+SHA1: 3acf66c33fde446d4fdf4df9ddbe646a5f254b11
+SHA256: ee2635b785b804f2abb5a1e1d343512ebc342395ab02495a5030a05e2b73f8a7
+SHA512: 46306820e943f47255efc281cb63e55da490e1287909d0715953027e1688b96d2bb050cddf9446cd35a838ad27d68de4b6104fea0540fe119383ed5a940c2b63
+Homepage: http://www.libreoffice.org
+Description: office productivity suite -- Slovak help
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the help of LibreOffice in
+ Slovak.
 
 Package: libpo-battlemanager1
 Architecture: amd64
@@ -224,6 +273,36 @@ Description: small, friendly text editor inspired by Pico
   - auto-indentation and color syntax-highlighting;
   - filename tab-completion and support for multiple buffers;
   - full internationalization support.
+
+Package: ure
+Architecture: amd64
+Version: 6.2.6-0ubuntu0.16.04.1~lo1
+Priority: optional
+Section: libs
+Source: libreoffice (1:6.2.6-0ubuntu0.16.04.1~lo1)
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Installed-Size: 4881
+Depends: uno-libs3 (= 6.2.6-0ubuntu0.16.04.1~lo1), libc6 (>= 2.14), libgcc1 (>= 1:3.0), libicu55 (>= 55.1-1~), liblangtag1 (>= 0.4.0), libstdc++6 (>= 5.2), libxml2 (>= 2.7.4)
+Suggests: java5-runtime
+Breaks: libreoffice-common (<< 1:4.5.0), libreoffice-core (<< 1:5.3.0~beta1~)
+Replaces: libreoffice-common (<< 1:4.5.0), libreoffice-core (<< 1:5.3.0~beta1~)
+Filename: ./ure_6.2.6-0ubuntu0.16.04.1~lo1_amd64.deb
+Size: 1737338
+MD5sum: 3bdb17921140a6cc99e167adb8aff175
+SHA1: b91b1e8aae4e1851a3755011456468475a5a6d2e
+SHA256: 9b3c9221df278dee53a34bc213cbd9c404e89e90b76844b40bee08459340c960
+SHA512: 47023860dcd7d67126b6a1b7991a5ca462988235095c81e196a493bdde260740f49878643fea32de26ee8a3b273044b6c00c6a274200c23fb7ede5c8e6908ff6
+Homepage: http://www.libreoffice.org
+Description: LibreOffice UNO runtime environment
+ The Uno Runtime Environment (URE) is the well-known UNO component model
+ of LibreOffice, packaged up as an individual product.
+ .
+ It offers you a flexible, low-overhead component model that is most ideal
+ for (but not limited to) combining in one application components written in
+ different computer languages, and developed by different parties. You can use
+ it to create any kind of application, in whatever application domain you can
+ imagine.
 
 Package: thunderbird-locale-it
 Architecture: amd64
@@ -459,6 +538,33 @@ Description: Catalan; Valencian language pack for Thunderbird
  This package contains Catalan; Valencian translations and search plugins
  for Thunderbird
 
+Package: libreoffice-gtk3
+Architecture: amd64
+Version: 1:6.2.6-0ubuntu0.16.04.1~lo1
+Priority: optional
+Section: gnome
+Source: libreoffice
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Installed-Size: 1489
+Depends: libreoffice-core (= 1:6.2.6-0ubuntu0.16.04.1~lo1), libatk1.0-0 (>= 1.12.4), libc6 (>= 2.14), libcairo2 (>= 1.10.0), libepoxy0 (>= 1.0), libgcc1 (>= 1:3.0), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.38.0), libgtk-3-0 (>= 3.18.0), libpango-1.0-0 (>= 1.14.0), libstdc++6 (>= 5), libx11-6, uno-libs3 (>= 5.1.0~alpha), ure
+Recommends: gstreamer1.0-gtk3
+Suggests: libreofficekit-data
+Enhances: libreoffice
+Filename: ./libreoffice-gtk3_6.2.6-0ubuntu0.16.04.1~lo1_amd64.deb
+Size: 321256
+MD5sum: 07fadb97096dbbc3ccc59dbfdae4872a
+SHA1: 317b38d451976cd25de0cd9b126712663f441c55
+SHA256: 5b2305309f8c2eb5356d02f043e1611bd9ec4b533b4f0f66c9e7eac354e87a1e
+SHA512: 81ff6879429abf1080d48e2fe78341ea9b2e3dda0308ef6763237b5a839efaa35881fa05ebfc9e0520f52fa3db533ce8f4895685400ce37317ab93206622c8de
+Homepage: http://www.libreoffice.org
+Description: office productivity suite -- GTK+ 3 integration
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the Gtk plugin for drawing LibreOffices widgets
+ with Gtk+ 3 and Gtk/GNOMEish print dialog when running under GNOME.
+
 Package: thunderbird-locale-fr
 Architecture: amd64
 Version: 1:60.0+build4-0ubuntu0.16.04.1
@@ -550,6 +656,31 @@ Description: Portuguese language pack for Thunderbird
  This package contains Portuguese translations and search plugins
  for Thunderbird
 
+Package: libreoffice-mysql-connector
+Architecture: amd64
+Version: 1:6.2.6-0ubuntu0.16.04.1~lo1
+Priority: optional
+Section: oldlibs
+Source: libreoffice
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Installed-Size: 19
+Depends: libreoffice-sdbc-mysql, libreoffice-core (= 1:6.2.6-0ubuntu0.16.04.1~lo1)
+Filename: ./libreoffice-mysql-connector_6.2.6-0ubuntu0.16.04.1~lo1_amd64.deb
+Size: 3184
+MD5sum: b5726c091c9a2f3b0cd601c3c69349d3
+SHA1: 5b089f7d9a77aeedd5278e3378d9c18fe579f709
+SHA256: cbd3d426509b4b3a99320493a26bdb3897fb647f202cf1a73b50b4811f96c66f
+SHA512: 4c6b9e31e51512d272f4e2a647ca87611f4eef8e3d29fe464c7cd03e46a39ac1f9641738bcbb7732fb0812a60b3c95117c950130612be5597b4817cb882e36ec
+Homepage: http://www.libreoffice.org
+Description: transitional package for MariaDB/MySQL Connector extension for LibreOffice
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package used to contain the LibreOffice MySQL/MariaDB Connector extension.
+ This has now been folded added to "main" packages (libreoffice-sdbc-mysql)
+ and this package thus can be safely removed once installed.
+
 Package: engrampa-common
 Architecture: all
 Version: 1.16.1-1~xenial1.0
@@ -602,6 +733,29 @@ Description: transitional package for GStreamer backend for LibreOffice
  This package used to contain the GStreamer backend for LibreOffice.
  This has now been merged into the "core" package and this package thus
  can be safely removed once installed.
+
+Package: libreoffice-math
+Architecture: amd64
+Version: 1:6.2.6-0ubuntu0.16.04.1~lo1
+Priority: optional
+Section: editors
+Source: libreoffice
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Installed-Size: 1393
+Depends: fonts-opensymbol, libreoffice-core (= 1:6.2.6-0ubuntu0.16.04.1~lo1), libc6 (>= 2.14), libgcc1 (>= 1:3.0), libstdc++6 (>= 5), uno-libs3 (>= 5.1.0~alpha), ure
+Filename: ./libreoffice-math_6.2.6-0ubuntu0.16.04.1~lo1_amd64.deb
+Size: 376710
+MD5sum: 53d95caf21fe5ee49f7d42848a320550
+SHA1: 16eea93df9cb12e25ce26a5eacd8dc2e9a39cb3c
+SHA256: fa90efa0308e1d57234a6f38324e4a4dbc28dc9bf809ba91a6e59f89c7b4bacc
+SHA512: d75f9f93bfcaef5b198ef9aaa2f303462f5a0115decbfd46c3c524a2c3f8d6ef99842669a8cc939da83821ad7615bcac9e190f708d9a8eed98dd1bebc1c284d1
+Homepage: http://www.libreoffice.org
+Description: office productivity suite -- equation editor
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the equation editor component for LibreOffice.
 
 Package: libreoffice-report-builder
 Architecture: all
@@ -1055,6 +1209,30 @@ Homepage: http://www.libreoffice.org
 Description: transitional package for Oxygen symbol style
  You can safely remove this package.
 
+Package: libreoffice-report-builder-bin
+Architecture: amd64
+Version: 1:6.2.6-0ubuntu0.16.04.1~lo1
+Priority: optional
+Section: misc
+Source: libreoffice
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Installed-Size: 3456
+Depends: libreoffice-base, libreoffice-core (= 1:6.2.6-0ubuntu0.16.04.1~lo1), libc6 (>= 2.14), libgcc1 (>= 1:3.0), libstdc++6 (>= 5), uno-libs3 (>= 5.1.0~alpha), ure
+Filename: ./libreoffice-report-builder-bin_6.2.6-0ubuntu0.16.04.1~lo1_amd64.deb
+Size: 812496
+MD5sum: 6ffa421954548b1ea21f6d98b606ce51
+SHA1: f08bf8538b5da49924387ba17e533ae12f0e2695
+SHA256: 34ff24c9082cffd5c8f2092f450ed8567ea24c268bf5d399c30496776f35013a
+SHA512: 510676ef145d949b77565f5507eac867a198d00801a6a8202f1ef6b91fbbac3398f63d3aa3a83b8eafcdccdf0ac326e12637f048cb02adebacfbaa4ad37878da
+Homepage: http://www.libreoffice.org
+Description: LibreOffice component for building database reports -- libraries
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains some architecture-dependent support libraries
+ (librpt*.so) for the report builder component.
+
 Package: libreoffice-gtk2
 Architecture: amd64
 Version: 1:6.3.1~rc1-0ubuntu0.16.04.1~lo6
@@ -1105,6 +1283,33 @@ Description: Thermal monitoring and controlling daemon
  temperature reaches a certain threshold, the Linux daemon
  activates various cooling methods to try to cool the system.
 
+Package: libreoffice-writer
+Architecture: amd64
+Version: 1:6.2.6-0ubuntu0.16.04.1~lo1
+Priority: optional
+Section: editors
+Source: libreoffice
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Installed-Size: 31906
+Depends: libreoffice-base-core (= 1:6.2.6-0ubuntu0.16.04.1~lo1), libreoffice-core (= 1:6.2.6-0ubuntu0.16.04.1~lo1), libc6 (>= 2.14), libgcc1 (>= 1:3.0), libicu55 (>= 55.1-1~), liblangtag1 (>= 0.5.0), libstdc++6 (>= 5.2), libxml2 (>= 2.7.4), uno-libs3 (>= 5.3.0~alpha), ure, zlib1g (>= 1:1.1.4)
+Recommends: libreoffice-math
+Suggests: fonts-crosextra-caladea, fonts-crosextra-carlito, libreoffice-base, libreoffice-java-common (>= 1:6.2.6~), default-jre | sun-java6-jre | java6-runtime | jre
+Breaks: libreoffice-common (<< 1:5.4.1)
+Replaces: libreoffice-common (<< 1:5.4.1)
+Filename: ./libreoffice-writer_6.2.6-0ubuntu0.16.04.1~lo1_amd64.deb
+Size: 8753762
+MD5sum: 61bb9e1fa72d70a51ba193e9f6dbfae7
+SHA1: e12104ba6cb4628f445b3686263c26f6dc25264e
+SHA256: cbb19745b473dccfe6ad9b0ed6cd792a791b1879e4c67d60e0cb3d3bfcfd6ab7
+SHA512: 5e18967c76ab609a1346d7f9929d66c1f6331738f0d55b389d2c7707e2ad72fe5c321ff3d3f3670065f3902bab4d1b61f59122d52939b4ef0597091943844c2a
+Homepage: http://www.libreoffice.org
+Description: office productivity suite -- word processor
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the wordprocessor component for LibreOffice.
+
 Package: libbotan2.3-doc
 Architecture: all
 Version: 2.3.0-3chl1~xenial1
@@ -1150,6 +1355,34 @@ Homepage: http://www.gimp.org/
 Description: Data files for GIMP
  This package contains architecture-independent supporting data files
  for use with GIMP.
+
+Package: libreoffice-script-provider-js
+Architecture: all
+Version: 1:6.2.6-0ubuntu0.16.04.1~lo1
+Priority: optional
+Section: web
+Source: libreoffice
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Installed-Size: 672
+Depends: libreoffice-common (= 1:6.2.6-0ubuntu0.16.04.1~lo1), libreoffice-core, libreoffice-java-common, default-jre | sun-java6-jre | java6-runtime | jre
+Filename: ./libreoffice-script-provider-js_6.2.6-0ubuntu0.16.04.1~lo1_all.deb
+Size: 614232
+MD5sum: 45cca41be936cfb1007e3cfa871a86f1
+SHA1: 2a90768c2f23b588f687cf83a9c18ece3f572cf5
+SHA256: 41e376582117720a95a2670ced6e42efe444503848a2841cd585a3ec65b34e44
+SHA512: d7651776e4c7b101726fcf17cd8cb8417caef5cbf44160370f35646604b794cc828ee4a819d1fbde80b21dd439bf54066e023631a32a3da708965bfee1653da4
+Homepage: http://www.libreoffice.org
+Description: JavaScript script support provider for LibreOffice scripting framework
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ The Scripting Framework allows LibreOffice users to write and run macros
+ in multiple languages including LibreOffice Basic, Python, Java, BeanShell
+ and JavaScript. These macros can then be assigned to menus, toolbars,
+ keyboard shortcuts, events and embedded objects.
+ .
+ This package contains the script provider to support JavaScript.
 
 Package: megasync
 Architecture: amd64
@@ -1203,6 +1436,32 @@ Description: Qt 4 OpenGL module
  OpenGL is a standard API for rendering 3D graphics. OpenGL only deals with 3D
  rendering and provides little or no support for GUI programming issues.
 
+Package: libreoffice-help-sv
+Architecture: all
+Version: 1:6.2.6-0ubuntu0.16.04.1~lo1
+Priority: optional
+Section: doc
+Source: libreoffice-l10n
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Installed-Size: 27661
+Provides: libreoffice-help (= 6.2)
+Depends: libreoffice-l10n-sv, libreoffice-common (>= 1:6.1.0~), libreoffice-writer
+Recommends: libreoffice-core (>> 1:6.2.6)
+Filename: ./libreoffice-help-sv_6.2.6-0ubuntu0.16.04.1~lo1_all.deb
+Size: 3246218
+MD5sum: c00be80ee29b39c143586f33f0982203
+SHA1: e822b4c9ef7fe366d1c3efc75c1e8c8ebaac825a
+SHA256: 3ccee01f76beaea557fbcea388158fafa50e6cdc92fb7344ded25657aa8b99ca
+SHA512: 0db72fac262cee0f9c4643d68e35888fc102877578265f7541f68fec86d56f0e1b900d4e9e37f1f0dd32156f458daa740355298f2aa36c389427aea2855888f1
+Homepage: http://www.libreoffice.org
+Description: office productivity suite -- Swedish help
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the help of LibreOffice in
+ Swedish.
+
 Package: thunderbird-locale-ro
 Architecture: amd64
 Version: 1:60.0+build4-0ubuntu0.16.04.1
@@ -1221,6 +1480,40 @@ SHA512: 6f941e544493b63c4a54b5abd9f4a2aaeb4f4e15b68ef921d80d9d4719e534202d6d8714
 Description: Romanian language pack for Thunderbird
  This package contains Romanian translations and search plugins
  for Thunderbird
+
+Package: libreoffice-gnome
+Architecture: amd64
+Version: 1:6.2.6-0ubuntu0.16.04.1~lo1
+Priority: optional
+Section: gnome
+Source: libreoffice
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Installed-Size: 217
+Provides: libreoffice-gtk-gnome
+Depends: libreoffice-core (= 1:6.2.6-0ubuntu0.16.04.1~lo1), libreoffice-gtk2, libc6 (>= 2.14), libgcc1 (>= 1:3.0), libglib2.0-0 (>= 2.38.0), libstdc++6 (>= 5), uno-libs3 (>= 5.1.0~alpha), ure
+Recommends: libreoffice-style-elementary
+Suggests: libreoffice-evolution, seahorse
+Conflicts: libreoffice-core (<< 1:3.9999), libreoffice-gtk (<= 1:5.2.0-0ubuntu2), libreoffice-gtk2 (<= 1:5.2.0-0ubuntu2)
+Replaces: libreoffice-core (<< 1:3.9999), libreoffice-gtk (<= 1:5.2.0-0ubuntu2), libreoffice-gtk2 (<= 1:5.2.0-0ubuntu2)
+Enhances: libreoffice
+Filename: ./libreoffice-gnome_6.2.6-0ubuntu0.16.04.1~lo1_amd64.deb
+Size: 59296
+MD5sum: 3ded6944984447086e896db4f2535290
+SHA1: 2eff9445f4c0c19d73bfdbb8b14d965486276eb3
+SHA256: a938b6e7a8434bcc5bea256044a872dc37acc31764d274fc0b9a62a4d9f16a67
+SHA512: a48050a56f1c21854d3edb215c30e637ce09de150fa0521cb557df8ffdc58eeb45f8a756072f8e4ce7d2c9a2b2ee49200e7ac97868ef6c42ab95e72afb753430
+Homepage: http://www.libreoffice.org
+Description: office productivity suite -- GNOME integration
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the GIO support, and the session installer integration.
+ .
+ You can extend the functionality of this by installing these packages:
+ .
+  * libreoffice-evolution: Evolution addressbook support
+  * evolution
 
 Package: libpolkit-gtk-mate-1-0
 Architecture: amd64
@@ -1329,6 +1622,36 @@ Description: fast, scalable, distributed revision control system (manual pages)
  This package provides reference documentation for use by the 'man'
  utility and the 'git help' command.
 
+Package: libreoffice-common
+Architecture: all
+Version: 1:6.2.6-0ubuntu0.16.04.1~lo1
+Priority: optional
+Section: editors
+Source: libreoffice
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Installed-Size: 83991
+Provides: libreoffice-l10n-en-us
+Depends: libreoffice-style-colibre, libreoffice-style-tango, ure
+Recommends: fonts-liberation2 | ttf-mscorefonts-installer, xdg-utils, python3-uno (>= 4.4.0~beta2), libexttextcat-data
+Suggests: libreoffice-style
+Conflicts: broffice, libreoffice-filter-mobiledev, libreoffice-l10n-4.2, libreoffice-l10n-4.3, libreoffice-l10n-4.4, libreoffice-l10n-5.0, libreoffice-l10n-5.1, libreoffice-wiki-publisher (<< 1.2.0+LibO5.4.0~rc2), openoffice-unbundled
+Breaks: libreoffice-core (>= 1:6.3~), libreoffice-core (<< 1:6.2~), libreoffice-help (<< 5.4), libreoffice-help-5.2, libreoffice-style-andromeda (<< 1:6.2~), libreoffice-style-crystal (>= 1:6.3~), libreoffice-style-crystal (<< 1:6.2~), libreoffice-style-galaxy (>= 1:6.3~), libreoffice-style-galaxy (<< 1:6.2~), libreoffice-style-hicontrast (>= 1:6.3~), libreoffice-style-hicontrast (<< 1:6.2~), libreoffice-style-tango (>= 1:6.3~), libreoffice-style-tango (<< 1:6.2~), libreoffice-writer2latex (<< 1.0.2-9), libreoffice-writer2xhtml (<< 1.0.2-9)
+Replaces: libreoffice-pdfimport (<< 1:5.4~)
+Filename: ./libreoffice-common_6.2.6-0ubuntu0.16.04.1~lo1_all.deb
+Size: 33370740
+MD5sum: 415dd1a1a204ac5ce6ed19a7a91f7a10
+SHA1: 32c80f49ffe1276a3524dfdd0190c32a0bf2f3ad
+SHA256: e368cd3ad9494cfa12e22d20d3d804aee30fbd7278c0383672e03881dbfc314f
+SHA512: 02999bc2180f1794da6fdf590146ba840cd22e3515e72b8103aeb57145ed96b66160f8a33418943945548efd9af4221262a2863f146acd19e038c45bec449628
+Homepage: http://www.libreoffice.org
+Description: office productivity suite -- arch-independent files
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the architecture-independent files of
+ LibreOffice.
+
 Package: thunderbird-locale-pt-br
 Architecture: all
 Version: 1:60.0+build4-0ubuntu0.16.04.1
@@ -1373,6 +1696,32 @@ Description: Data files for Audacious plugins
  .
  This package contains internationalized messages and skins for
  Audacious plugins.
+
+Package: libreoffice-style-elementary
+Architecture: all
+Version: 1:6.2.6-0ubuntu0.16.04.1~lo1
+Priority: optional
+Section: editors
+Source: libreoffice
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Installed-Size: 7192
+Provides: libreoffice-style
+Depends: libreoffice-style-tango, libreoffice-common (= 1:6.2.6-0ubuntu0.16.04.1~lo1)
+Enhances: libreoffice-core
+Filename: ./libreoffice-style-elementary_6.2.6-0ubuntu0.16.04.1~lo1_all.deb
+Size: 6025708
+MD5sum: a921a5b2fde333a0db586f5f3cac8d6c
+SHA1: 1093e53411cfe08129288f9f460f7e999b73eaf2
+SHA256: 186aba92a2f8345063ec65a21424573dde6f671f6913c39b73b8728de1cfacad
+SHA512: 4a62af19e717ff26a17f20e1300e9b715a4becfc88ec4dce6ef8e1bff480c6bb7164eaeb5886b2e291cb3123c3a18da5c37725e90fdb3bdb1d0503bfbdde7ad7
+Homepage: http://www.libreoffice.org
+Description: office productivity suite -- Elementary symbol style
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the "elementary" symbol style, default style
+ for GTK+/Gnome.
 
 Package: xul-ext-lightning
 Architecture: amd64
@@ -1505,6 +1854,32 @@ Description: common scripts and macros to develop with MATE
  environment and MATE using applications. Included are mate-autogen.sh and
  several macros to help in MATE source trees.
 
+Package: libreoffice-help-en-gb
+Architecture: all
+Version: 1:6.2.6-0ubuntu0.16.04.1~lo1
+Priority: optional
+Section: doc
+Source: libreoffice-l10n
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Installed-Size: 25985
+Provides: libreoffice-help (= 6.2)
+Depends: libreoffice-l10n-en-gb, libreoffice-common (>= 1:6.1.0~), libreoffice-writer
+Recommends: libreoffice-core (>> 1:6.2.6)
+Filename: ./libreoffice-help-en-gb_6.2.6-0ubuntu0.16.04.1~lo1_all.deb
+Size: 2691362
+MD5sum: 3c18b41502eafb39b8b1f234c7469b79
+SHA1: 8eacd6920c9c696680174f4c8dfb32004f649558
+SHA256: 05c056cb375477bda3801708f18e0627fb902df069566dd4c34573b1948fb9a6
+SHA512: 1d4129846cc4feab9fc8885364809a7006561891dc41149900ea8d9be4fa69a86b348161c1e44d38371b3bd516b8bc233eae4887ff97f77f87491bf9dbf1c9f3
+Homepage: http://www.libreoffice.org
+Description: office productivity suite -- English_british help
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the help of LibreOffice in
+ English_british.
+
 Package: mate-themes
 Architecture: all
 Version: 3.18.6-1~xenial1.0
@@ -1530,6 +1905,33 @@ Description: Official themes for the MATE desktop
  are well known from GNOMEv2 desktops. However, the MATE team also prepared
  some new themes esp. for MATE (Menta, GreenLaguna, TraditionalGreen,
  TraditionalOk, and BlackMate).
+
+Package: libreoffice-dev-common
+Architecture: all
+Version: 1:6.2.6-0ubuntu0.16.04.1~lo1
+Priority: optional
+Section: devel
+Source: libreoffice
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Installed-Size: 15605
+Depends: libreoffice-common (= 1:6.2.6-0ubuntu0.16.04.1~lo1)
+Conflicts: libreoffice (<< 1:5.2.5-2~)
+Breaks: libreoffice-dev (<< 1:5.2.0~)
+Replaces: libreoffice-dev (<< 1:5.2.0~)
+Filename: ./libreoffice-dev-common_6.2.6-0ubuntu0.16.04.1~lo1_all.deb
+Size: 1404836
+MD5sum: 878a45aafa8fd20feb29c4193b3889e5
+SHA1: 9da91ae6e9b4a693d17d3f33a7b84e696de2e295
+SHA256: 350308f24dca3b49370da1aa77af5c720f2f015461599ccf2033cb4f9ed7e3fa
+SHA512: c88061f35f931789307bc3f8d77f75882e65eb0713b295424e103cc4d07f4b85347f624edd3cbeac3f04a7b442e6767198c1c9e1dfc822c84fb381bf07b6767b
+Homepage: http://www.libreoffice.org
+Description: office productivity suite -- SDK -- architecture-independent parts
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the (architecture-independent) files needed to build
+ plugins/add-ons for LibreOffice (includes, IDL files, ...)
 
 Package: caja-open-terminal
 Architecture: amd64
@@ -1757,6 +2159,32 @@ Description: "Solver for Nonlinear Programming" extension for LibreOffice
  Currently it incorporates two Evolutionary Algorithms which are able to
  handle floating point and integer variables as well as nonlinear constraints.
 
+Package: libreoffice-style-colibre
+Architecture: all
+Version: 1:6.2.6-0ubuntu0.16.04.1~lo1
+Priority: optional
+Section: editors
+Source: libreoffice
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Installed-Size: 2335
+Provides: libreoffice-style
+Depends: libreoffice-common (= 1:6.2.6-0ubuntu0.16.04.1~lo1)
+Enhances: libreoffice-core
+Filename: ./libreoffice-style-colibre_6.2.6-0ubuntu0.16.04.1~lo1_all.deb
+Size: 1012954
+MD5sum: e7175f616dfa654c26bf34cb37bfcf5c
+SHA1: 18f2b269952998de672b34d10a13a65a7f705187
+SHA256: 78e18cad6c15989ea6e225a3ce296c4f3710ced5aef8fb101482217cd2ba3553
+SHA512: e3ade4b10faee8206802d57b8a3500bed1d50b500034b778a48d63eb725ed52dadf8d419bd422925218a236a6308540d0785c1d2eb739f22a45c0edfaa6f5499
+Homepage: http://www.libreoffice.org
+Description: office productivity suite -- colibre symbol style
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the "colibre" symbol style - a icon theme
+ which follow Microsoft(R) Offices color scheme.
+
 Package: thunderbird-locale-sl
 Architecture: amd64
 Version: 1:60.0+build4-0ubuntu0.16.04.1
@@ -1819,6 +2247,38 @@ Description: implementation of the freedesktop menu specification for MATE
  .
  Also contained here are the MATE menu layout configuration files, .directory
  files and assorted menu related utility programs.
+
+Package: libreoffice-dev
+Architecture: amd64
+Version: 1:6.2.6-0ubuntu0.16.04.1~lo1
+Priority: optional
+Section: devel
+Source: libreoffice
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Installed-Size: 981
+Depends: libreoffice-core (= 1:6.2.6-0ubuntu0.16.04.1~lo1), libreoffice-dev-common (= 1:6.2.6-0ubuntu0.16.04.1~lo1), ucpp, libc6 (>= 2.14), libgcc1 (>= 1:3.0), libstdc++6 (>= 5.2), libx11-6, uno-libs3 (>= 4.4.0~alpha), ure
+Recommends: g++, libreoffice-java-common (>= 1:6.2.6~), default-jre | sun-java6-jre | java6-runtime | jre
+Suggests: libmythes-dev, libreoffice-dev-doc, libreofficekit-dev
+Conflicts: libreoffice (<< 1:5.2.5-2~), libreoffice-dev-doc (<< 1:5.2.5-2~)
+Breaks: libreoffice-dev-common (<< 1:5.4.1~)
+Replaces: libreoffice-dev-common (<< 1:5.4.1~)
+Filename: ./libreoffice-dev_6.2.6-0ubuntu0.16.04.1~lo1_amd64.deb
+Size: 291102
+MD5sum: d4f3071d18541b3be36fd2e940b8c1f6
+SHA1: 9c8719f5475af7d2019e0b0d2291977770435258
+SHA256: bc9b032806a41101b98c66ba84ca8c7d7bec238907e70c3a59b909400b253b5f
+SHA512: 85460befa76f7d206f699d944943d339336b67f0dbb7c5d63ffac6444132484524a0abb1d3f43c75645a9c3bed7d8040895814ff8e582ed78ac084929f95201e
+Homepage: http://www.libreoffice.org
+Description: office productivity suite -- SDK -- architecture-dependent parts
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the (architecture-dependent) files needed to build
+ plugins/add-ons for LibreOffice (build tools, libraries, arch-dependent
+ includes, ...).
+ .
+ It also contains the gengal and ui-previewer utilities.
 
 Package: python-mate-menu
 Architecture: amd64
@@ -2082,6 +2542,38 @@ SHA512: 7e20c1a9391e18189a6bc8feb9d9680b8b6dd9fab222e438469d3b3dafd742a428678e32
 Description: Albanian language pack for Thunderbird
  This package contains Albanian translations and search plugins
  for Thunderbird
+
+Package: libreoffice-kde4
+Architecture: amd64
+Version: 1:6.2.6-0ubuntu0.16.04.1~lo1
+Priority: optional
+Section: kde
+Source: libreoffice
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Installed-Size: 285
+Depends: libreoffice-core (= 1:6.2.6-0ubuntu0.16.04.1~lo1), kde-runtime (>> 4:4.10), libc6 (>= 2.4), libgcc1 (>= 1:3.0), libglib2.0-0 (>= 2.38.0), libkdecore5 (>= 4:4.3.4), libkdeui5 (>= 4:4.3.4), libkfile4 (>= 4:4.3.4), libkio5 (>= 4:4.3.4), libqtcore4 (>= 4:4.8), libqtgui4 (>= 4:4.8.0), libstdc++6 (>= 5), libx11-6, uno-libs3 (>= 4.4.0~alpha), ure
+Recommends: libreoffice-style-breeze
+Suggests: kleopatra | kgpg, kmail, konqueror
+Breaks: libreoffice-kde (<< 1:6.0.0~)
+Replaces: libreoffice-core (= 1:4.3.0~beta1-1), libreoffice-kde (<< 1:6.1.0~alpha1-1)
+Enhances: libreoffice
+Filename: ./libreoffice-kde4_6.2.6-0ubuntu0.16.04.1~lo1_amd64.deb
+Size: 90116
+MD5sum: 26c8f76973f8003c30feb934faaddb1a
+SHA1: 838b05169c7f3a230fae1346b276f8e5ff8c3723
+SHA256: 13bb604c9e2d34d19f02c577e757c036df5d02031602688dbffec7f920739523
+SHA512: a3582644275ff5202e1b630a6421e4fc8766e18c9cc751d99f89881ca47d97475215578b1b053d17d20301f775311d71fd9be518feeb373fbf3c40a94df347d9
+Homepage: http://www.libreoffice.org
+Description: office productivity suite -- KDE 4 integration
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the KDE plugin for drawing LibreOffices widgets with
+ KDE/Qt and a KDEish File Picker when running under KDE.
+ You can extend the functionality of this by installing these packages:
+ .
+  * konqueror / kmail
 
 Package: plymouth-theme-ubuntu-mate-logo
 Architecture: all
@@ -2687,6 +3179,32 @@ Description: Phonon GStreamer 1.0 backend
  popular free multimedia formats and gstreamer1.0-plugins-ugly to get support
  for popular MPEG audio formats like MP3.
 
+Package: libreoffice-help-it
+Architecture: all
+Version: 1:6.2.6-0ubuntu0.16.04.1~lo1
+Priority: optional
+Section: doc
+Source: libreoffice-l10n
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Installed-Size: 29022
+Provides: libreoffice-help (= 6.2)
+Depends: libreoffice-l10n-it, libreoffice-common (>= 1:6.1.0~), libreoffice-writer
+Recommends: libreoffice-core (>> 1:6.2.6)
+Filename: ./libreoffice-help-it_6.2.6-0ubuntu0.16.04.1~lo1_all.deb
+Size: 3291982
+MD5sum: af4f21ec6292d7d0b635430b0cea0dd4
+SHA1: 7901edb76a18193bf5a414ae8dfa46e4e1c8e93f
+SHA256: 01e44562806170765baab3dc2dc2e78919cb27c7dee34af58c4f8099878fb4d6
+SHA512: 024b0ea69bef8e963d4acedd1600f041a8bf714e187ece5b391fd55c943213cd42f7cf29275b9868bf2dee15fc4dc5192c6349fdf27a50e1893288720aa792a9
+Homepage: http://www.libreoffice.org
+Description: office productivity suite -- Italian help
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the help of LibreOffice in
+ Italian.
+
 Package: libmarco-private0
 Architecture: amd64
 Version: 1.16.1-1~xenial1.0
@@ -2809,6 +3327,32 @@ Description: lightweight GTK+ window manager for MATE
  developed mainly for the MATE Desktop.
  .
  This package contains the marco window manager itself.
+
+Package: libreoffice-help-ko
+Architecture: all
+Version: 1:6.2.6-0ubuntu0.16.04.1~lo1
+Priority: optional
+Section: doc
+Source: libreoffice-l10n
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Installed-Size: 30034
+Provides: libreoffice-help (= 6.2)
+Depends: libreoffice-l10n-ko, libreoffice-common (>= 1:6.1.0~), libreoffice-writer
+Recommends: libreoffice-core (>> 1:6.2.6)
+Filename: ./libreoffice-help-ko_6.2.6-0ubuntu0.16.04.1~lo1_all.deb
+Size: 3742810
+MD5sum: 9f149cb4d7726d3e526da80429e5e65e
+SHA1: a067f90d1442be441ebf250278ae1706ea7fc298
+SHA256: e39df0e7bf9b5145dba0bb431f155c5eda2581b3870f729fa6c98277fd79fea1
+SHA512: b633bb55b8e48e26c314f5eb922a105b0cfd0361afa0a21ad5ddd83c11ffb9b730522207e64362738d8bd55cac4f4d27d437aec5777bd4fe0bad41d445dfd6af
+Homepage: http://www.libreoffice.org
+Description: office productivity suite -- Korean help
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the help of LibreOffice in
+ Korean.
 
 Package: shark-isobuild
 Architecture: all
@@ -2951,6 +3495,26 @@ Description: library to access Zeitgeist - shared library
  .
  This package contains shared libraries to be used by applications.
 
+Package: libreoffice-style-hicontrast
+Architecture: all
+Version: 1:6.2.6-0ubuntu0.16.04.1~lo1
+Priority: extra
+Section: oldlibs
+Source: libreoffice
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Installed-Size: 12
+Depends: libreoffice-style-sifr
+Filename: ./libreoffice-style-hicontrast_6.2.6-0ubuntu0.16.04.1~lo1_all.deb
+Size: 2644
+MD5sum: 0ea0c59f680ae9e520095a7251f65a76
+SHA1: 1d0f066435a7ea4fcf1bdeaa04250519406c3cb3
+SHA256: fc9507b604869b9f218eb96b76d9cc2b530ce61fa6eb6c4ff0c28305b7d7391e
+SHA512: 9e1d41f5823c5bf8a239a995b9df68ddee22dcf60fb31a08a121f361300d09587877fc78a4f9268c50a01c262ffe4936e34ccba41a2efe2a91de91642d6ddf76
+Homepage: http://www.libreoffice.org
+Description: transitional package for Hicontrast symbol style
+ You can safely remove this package.
+
 Package: thunderbird-locale-pl
 Architecture: amd64
 Version: 1:60.0+build4-0ubuntu0.16.04.1
@@ -3070,6 +3634,25 @@ Description: Swedish language pack for Thunderbird
  This package contains Swedish translations and search plugins
  for Thunderbird
 
+Package: libreoffice-smoketest-data
+Architecture: all
+Version: 1:6.2.6-0ubuntu0.16.04.1~lo1
+Priority: optional
+Section: misc
+Source: libreoffice
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Installed-Size: 139
+Filename: ./libreoffice-smoketest-data_6.2.6-0ubuntu0.16.04.1~lo1_all.deb
+Size: 121528
+MD5sum: 0ffb19defe22dfee7c9c49d68b65a604
+SHA1: 73587b94bec52bc34818cde6e6f3a094036fcfe0
+SHA256: e30dd94dde36e8341129dc95bc46ceed11aece05f8fcc9c3370a18a005b21aae
+SHA512: 6cb23c6a7aef826669cb558317154f7d174bedb039f97c75f139ef1306d844984267eaf9c81eb372b10a80c77e8ed1b4a60ca43e2a3c5c38f3f4542b359106c2
+Homepage: http://www.libreoffice.org
+Description: data files for LibreOffices "smoketest"
+ Data files for the LibreOffice "smoketest".
+
 Package: phonon-backend-gstreamer-common
 Architecture: amd64
 Version: 4:4.8.2-0ubuntu2
@@ -3101,6 +3684,32 @@ Description: Phonon GStreamer 1.0.x backend icons
  for popular MPEG audio formats like MP3.
  .
  This package contains icons used by Phonon and Phonon4Qt5 backends.
+
+Package: libreoffice-help-id
+Architecture: all
+Version: 1:6.2.6-0ubuntu0.16.04.1~lo1
+Priority: optional
+Section: doc
+Source: libreoffice-l10n
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Installed-Size: 27092
+Provides: libreoffice-help (= 6.2)
+Depends: libreoffice-l10n-id, libreoffice-common (>= 1:6.1.0~), libreoffice-writer
+Recommends: libreoffice-core (>> 1:6.2.6)
+Filename: ./libreoffice-help-id_6.2.6-0ubuntu0.16.04.1~lo1_all.deb
+Size: 2997256
+MD5sum: 4e61b117cbe54e1b5f1252db4a1433c8
+SHA1: 86181248188fb973a385b559a2080134028c3f99
+SHA256: e1539e29e943cbb77409b1fdad1894537203294dad872748357c9e8a23ab274c
+SHA512: 312094d066da6c324783fdff21a716953428c4d028cc4e3435fc5431b0f2ad28d55d5ae2d7fd69c05528fb173cf30a62328726d0fa3d3c1179030095aede7636
+Homepage: http://www.libreoffice.org
+Description: office productivity suite -- Indonesian help
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the help of LibreOffice in
+ Indonesian.
 
 Package: libbsh-java
 Architecture: all
@@ -3443,6 +4052,32 @@ Description: Calendar Extension for Thunderbird (transitional package)
  This is a transitional package to ensure that upgrades work correctly.
  It can be safely removed
 
+Package: libreoffice-help-el
+Architecture: all
+Version: 1:6.2.6-0ubuntu0.16.04.1~lo1
+Priority: optional
+Section: doc
+Source: libreoffice-l10n
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Installed-Size: 37094
+Provides: libreoffice-help (= 6.2)
+Depends: libreoffice-l10n-el, libreoffice-common (>= 1:6.1.0~), libreoffice-writer
+Recommends: libreoffice-core (>> 1:6.2.6)
+Filename: ./libreoffice-help-el_6.2.6-0ubuntu0.16.04.1~lo1_all.deb
+Size: 3659892
+MD5sum: 96570557da311e71e036955234699afa
+SHA1: 7d1623988646211ec7ae2704ea5bfd9726c6e152
+SHA256: 3a8c3c519bf2a49d24e371870d68ffb62748326382b0b8d77f4afd15d8188bae
+SHA512: 28d542b416d381085212faeb695410bc98766e350d58db067ebc201be44ca2e15dbb92d1f206fb61a54e7fcbea7d78c9b180a9161124fab51d3eb121760cbf41
+Homepage: http://www.libreoffice.org
+Description: office productivity suite -- Greek help
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the help of LibreOffice in
+ Greek.
+
 Package: thunderbird-locale-ta-lk
 Architecture: all
 Version: 1:60.0+build4-0ubuntu0.16.04.1
@@ -3461,6 +4096,55 @@ SHA512: 51a8ff12f64db6872358d1990d7a84d5db29e96a1eb871a5324edaa1d15e5b36e34bacf8
 Description: Transitional Tamil language pack for Thunderbird
  This is a transitional package to ensure that upgrades work correctly.
  It can be safely removed
+
+Package: libreoffice-java-common
+Architecture: all
+Version: 1:6.2.6-0ubuntu0.16.04.1~lo1
+Priority: optional
+Section: editors
+Source: libreoffice
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Installed-Size: 2433
+Depends: libreoffice-common (= 1:6.2.6-0ubuntu0.16.04.1~lo1)
+Filename: ./libreoffice-java-common_6.2.6-0ubuntu0.16.04.1~lo1_all.deb
+Size: 1845258
+MD5sum: 9f0e4676ccdde131e8d7250b6cfebf21
+SHA1: 6e8b208acc75c24b20977582518e1fde36201884
+SHA256: 5c8508da06716334c7e9abf5b4fbbc490bd0343a5f7151e3e3b7f66568cdf7a5
+SHA512: f7a05c9ef8f691ab021ff10aea7c630653c8e7706a8af50a34a9bd46144ac071055300e8892b36b5909dae62f179805020ff1d87316f392c56aa21d8322b282f
+Homepage: http://www.libreoffice.org
+Description: office productivity suite -- arch-independent Java support files
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the architecture-independent files of
+ the Java support for LibreOffice (Java classes, scripts, config snippets).
+
+Package: libreoffice-sdbc-mysql
+Architecture: amd64
+Version: 1:6.2.6-0ubuntu0.16.04.1~lo1
+Priority: optional
+Section: misc
+Source: libreoffice
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Installed-Size: 376
+Depends: libreoffice-core (= 1:6.2.6-0ubuntu0.16.04.1~lo1), libc6 (>= 2.14), libgcc1 (>= 1:3.0), libmysqlclient20 (>= 5.7.11), libstdc++6 (>= 5.2), uno-libs3 (>= 5.3.0~alpha), ure
+Suggests: default-mysql-server | virtual-mysql-server
+Filename: ./libreoffice-sdbc-mysql_6.2.6-0ubuntu0.16.04.1~lo1_amd64.deb
+Size: 90524
+MD5sum: 7a902829512e9bc70af6de606b2bec5c
+SHA1: 1f0fb97af82a7ba6f8f74534754b4849de984399
+SHA256: a428f0fa3f2b900aa77b59747fbb01859fbd0a273e585bba84c0744aee2a9339
+SHA512: a8106735abad8f00cf616920c6706795420b7bc651eba2cf3e0191ad0b70e3bdff52fa52d08d47472f41aea7ca07adeb3bdffe16ac0d72ae7b66c758eee94be1
+Homepage: http://www.libreoffice.org
+Description: MariaDB/MySQL SDBC driver for LibreOffice
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ The MariaDB/MySQL driver allows one to use the MariaDB or MySQL
+ database from LibreOffice without any wrapper layer such as ODBC or JDBC.
 
 Package: gir1.2-caja
 Architecture: amd64
@@ -3538,6 +4222,32 @@ SHA256: 2c9c5f549cc32f9b11d8912b7c89ced6d28b9b5959e3c5190c62940cc1f1b317
 SHA512: 0aef6b25d24c4d38cc346e5424b66f8605b2a0f4e327ea118349ab5fc99a7a8cbfafee79ffdb227d7d09b272b507535cb0bda83694d84719c55177e640e5a977
 Homepage: https://nordvpn.com/
 Description: Package to install NordVPN GPG key and APT repo
+
+Package: libreoffice-help-tr
+Architecture: all
+Version: 1:6.2.6-0ubuntu0.16.04.1~lo1
+Priority: optional
+Section: doc
+Source: libreoffice-l10n
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Installed-Size: 28616
+Provides: libreoffice-help (= 6.2)
+Depends: libreoffice-l10n-tr, libreoffice-common (>= 1:6.1.0~), libreoffice-writer
+Recommends: libreoffice-core (>> 1:6.2.6)
+Filename: ./libreoffice-help-tr_6.2.6-0ubuntu0.16.04.1~lo1_all.deb
+Size: 3528224
+MD5sum: d5cdf0fbd28db8f2aa32912d483e53bf
+SHA1: 55ae25e67683196ff1fb56511d4edc4ac7c71d2f
+SHA256: f9a40007f091619a9d43649b09157ada8af9f4ce7e774defe0e30e6ccc88e964
+SHA512: c36992cdd259c370b31aede9a69b1e804fddf242b1c2bb4ac5df0a198638d8efcc881cee2dcfa4ffed76b0de3023866af8be827e0c51ba038b52ef2e9e1b3c2e
+Homepage: http://www.libreoffice.org
+Description: office productivity suite -- Turkish help
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the help of LibreOffice in
+ Turkish.
 
 Package: libaudiofile1
 Architecture: amd64
@@ -3745,6 +4455,58 @@ Description: Container hypervisor based on LXC - daemon
  .
  This package contains the LXD daemon.
 
+Package: libreoffice-base-drivers
+Architecture: amd64
+Version: 1:6.2.6-0ubuntu0.16.04.1~lo1
+Priority: optional
+Section: database
+Source: libreoffice
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Installed-Size: 2357
+Depends: libreoffice-core (= 1:6.2.6-0ubuntu0.16.04.1~lo1), libc6 (>= 2.14), libgcc1 (>= 1:3.0), libstdc++6 (>= 5), uno-libs3 (>= 5.3.0~alpha), ure
+Suggests: libjtds-java, libreoffice-sdbc-hsqldb, libreoffice-sdbc-mysql | libmyodbc | libmariadb-java, libreoffice-sdbc-postgresql | odbc-postgresql | libpg-java, libsqliteodbc | tdsodbc | mdbtools
+Breaks: libreoffice-base (<< 1:4.3.0-3)
+Replaces: libreoffice-base (<< 1:4.3.0-3), libreoffice-core (<< 1:6.2.0~beta1~)
+Filename: ./libreoffice-base-drivers_6.2.6-0ubuntu0.16.04.1~lo1_amd64.deb
+Size: 498552
+MD5sum: e2d8aaa1b649a047245f11b768500a91
+SHA1: 4d23ac9766b195f81e1a6a955dad28aeee5752eb
+SHA256: f12622a4be796d23819fdc230021943550f147328f21156ed05f93f0914278d7
+SHA512: d902c577362602490b865f4ead5370d29184d89e333a019c2aaeb4a516e12d47511506727bdf921776f14344ffda8af86b3c9225519d20b9a8a8f4b0501642d9
+Homepage: http://www.libreoffice.org
+Description: Database connectivity drivers for LibreOffice
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the database connectivity drivers used by LibreOffices
+ database functionality:
+  - ODBC
+  - JDBC
+  - dBase
+  - Calc
+  - Flat files
+ .
+ You can extend this by installing:
+ .
+  * unixodbc: ODBC database support
+  * libmyodbc | odbc-postgresql | libsqliteodbc | tdsodbc | mdbtools: ODBC
+    drivers for:
+    - MySQL
+    - PostgreSQL
+    - SQLite
+    - MS SQL / Sybase SQL
+    - *.mdb (JET / MS Access)
+  * libmariadb-java | libpg-java | libjtds-java: JDBC Drivers
+    for:
+    - MySQL/MariaDB
+    - PostgreSQL
+    - MS SQL Server and Sybase
+  * libreoffice-sdbc-hsqldb: embedded HSQLDB SDBC Driver
+  * libreoffice-sdbc-firebird: Firebird SDBC Driver
+  * libreoffice-sdbc-postgresql: PostgreSQL SDBC Driver
+  * libreoffice-sdbc-mysql: MySQL/MariaDB SDBC Driver
+
 Package: libwebkitgtk-3.0-common
 Architecture: all
 Version: 2.4.11-0ubuntu0.1
@@ -3849,6 +4611,32 @@ Description: libpo-pokemoninfo (runtime)
  in real time with trainers from around the world!
  .
  This package contains the runtime library.
+
+Package: libreoffice-help-vi
+Architecture: all
+Version: 1:6.2.6-0ubuntu0.16.04.1~lo1
+Priority: optional
+Section: doc
+Source: libreoffice-l10n
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Installed-Size: 28812
+Provides: libreoffice-help (= 6.2)
+Depends: libreoffice-l10n-vi, libreoffice-common (>= 1:6.1.0~), libreoffice-writer
+Recommends: libreoffice-core (>> 1:6.2.6)
+Filename: ./libreoffice-help-vi_6.2.6-0ubuntu0.16.04.1~lo1_all.deb
+Size: 3241104
+MD5sum: 6af78ba240e90544275723f1309eaaae
+SHA1: bb12717ce126a3d5a6fbac6757a28696041727eb
+SHA256: b520c2853d1e93a7117b39c2bee218ab72cd5a7e9bc8ca1ff7c05cb33b23b365
+SHA512: 4ddcf33ed80d199c319dafc3243defc68833129c0136bc107ea5e67e7e2a625bff28fe6ef54812a4e2f6ccc7ba68d1dd108c90f30883369691f1b20814697978
+Homepage: http://www.libreoffice.org
+Description: office productivity suite -- Vietnamese help
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the help of LibreOffice in
+ Vietnamese.
 
 Package: libxfdashboard0
 Architecture: amd64
@@ -4045,6 +4833,32 @@ Description: Process viewer and system resource monitor for MATE (common files)
  .
  This package contains the architecture independent files.
 
+Package: libreoffice-help-hi
+Architecture: all
+Version: 1:6.2.6-0ubuntu0.16.04.1~lo1
+Priority: optional
+Section: doc
+Source: libreoffice-l10n
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Installed-Size: 28153
+Provides: libreoffice-help (= 6.2)
+Depends: libreoffice-l10n-hi, libreoffice-common (>= 1:6.1.0~), libreoffice-writer
+Recommends: libreoffice-core (>> 1:6.2.6)
+Filename: ./libreoffice-help-hi_6.2.6-0ubuntu0.16.04.1~lo1_all.deb
+Size: 2961970
+MD5sum: 307ad902db2f59c8716224b84c1f6e92
+SHA1: 29aba8d008cf67e560ef27e20f79c0de29394969
+SHA256: 9549655a4014fb914e337c611e19f77f29bf49b2733611d82d2da9cc43d64be7
+SHA512: 047a0f80062c3799c21ff45e8c65f53e3bd340a0a8a2d284cbef4d7e1cc2003dc270f78c999edc290852779d689b80c79baea6a1ce5b1a70b6452aad633979bc
+Homepage: http://www.libreoffice.org
+Description: office productivity suite -- Hindi help
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the help of LibreOffice in
+ Hindi.
+
 Package: plymouth-theme-ubuntu-mate-text
 Architecture: all
 Version: 16.04.8~xenial3.1
@@ -4070,6 +4884,31 @@ Description: graphical boot animation and logger - ubuntu-mate-text theme
  .
  This package contains the default ubuntu-mate-text theme used when no
  support for a graphical theme is found on your system.
+
+Package: libreoffice-evolution
+Architecture: amd64
+Version: 1:6.2.6-0ubuntu0.16.04.1~lo1
+Priority: optional
+Section: gnome
+Source: libreoffice
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Installed-Size: 353
+Depends: libreoffice-base, libreoffice-common, libreoffice-core (= 1:6.2.6-0ubuntu0.16.04.1~lo1), libebook-1.2-16, libc6 (>= 2.4), libgcc1 (>= 1:3.0), libglib2.0-0 (>= 2.38.0), libstdc++6 (>= 5), uno-libs3 (>= 4.4.0~alpha), ure
+Recommends: evolution
+Filename: ./libreoffice-evolution_6.2.6-0ubuntu0.16.04.1~lo1_amd64.deb
+Size: 79906
+MD5sum: ddd2e08d15fb0d0ba402d53c3b1c1cd8
+SHA1: d728a570bb8642368df1417b77b8c8515f29fcb3
+SHA256: c766d7881715f80370f46d93105f0b5e19555bb10e8dac59734fbf15b72731c9
+SHA512: 939b7345a3abfbcfa9582433afed28dc437488867e77b502c82ec18770b61ad191077f9639718eabf51fb59db18f47a2082a21a12a266003e1e8810539301058
+Homepage: http://www.libreoffice.org
+Description: office productivity suite -- Evolution addressbook support
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package allows LibreOffice to access Evolution address books.
+ You need to install evolution separately.
 
 Package: bzip2
 Architecture: amd64
@@ -4103,6 +4942,57 @@ Description: high-quality block-sorting file compressor - utilities
  .
  The archive file format of bzip2 (.bz2) is incompatible with that of its
  predecessor, bzip (.bz).
+
+Package: libreoffice-pdfimport
+Architecture: all
+Version: 1:6.2.6-0ubuntu0.16.04.1~lo1
+Priority: optional
+Section: oldlibs
+Source: libreoffice
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Installed-Size: 12
+Depends: libreoffice-common (= 1:6.2.6-0ubuntu0.16.04.1~lo1), libreoffice-core (>= 1:5.4~)
+Filename: ./libreoffice-pdfimport_6.2.6-0ubuntu0.16.04.1~lo1_all.deb
+Size: 2826
+MD5sum: 23423d2a6fcf66366ff82e94af57d7d1
+SHA1: 14802391354c97ce2d72657e99a9964e45e43b20
+SHA256: 422a7901e9b9c473b5f1754e2de1cd31749eddcf45e18fa4f2d8a7175a4b439b
+SHA512: 2c08ee0ed9b13e935e4a6a6e69d6a7bda08131607a98e24691948366355b659e6ca37d1524aa9e8987177d66a58d03370741fcb4c58a9e17dfe39e47ebdec722
+Homepage: http://www.libreoffice.org
+Description: transitional package for PDF Import component for LibreOffice
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package formerly contained a component enabling LibreOffice to import PDF
+ Documents. This now has been merged back into the "main" packages and this
+ package thus can be safely removed once installed.
+
+Package: libreoffice-avmedia-backend-gstreamer
+Architecture: amd64
+Version: 1:6.2.6-0ubuntu0.16.04.1~lo1
+Priority: optional
+Section: misc
+Source: libreoffice
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Installed-Size: 95
+Provides: libreoffice-avmedia-backend
+Depends: libreoffice-core (= 1:6.2.6-0ubuntu0.16.04.1~lo1), libc6 (>= 2.4), libgcc1 (>= 1:3.0), libglib2.0-0 (>= 2.38.0), libgstreamer-plugins-base1.0-0 (>= 1.0.0), libgstreamer1.0-0 (>= 1.4.0), libgtk-3-0 (>= 3.0.0), libstdc++6 (>= 4.1.1), uno-libs3 (>= 4.4.0~alpha), ure
+Suggests: gstreamer1.0-plugins-bad
+Filename: ./libreoffice-avmedia-backend-gstreamer_6.2.6-0ubuntu0.16.04.1~lo1_amd64.deb
+Size: 25154
+MD5sum: fe5d0bac16cb3a14d42d564be6913c89
+SHA1: 7465821f4bbcb032e9bef57e5bb7aa112364a3bb
+SHA256: 9100b1baaca2ae7c2c9c6f9fba106b84fff0da0b12d0d93d6660e2a5a90dd38f
+SHA512: 9878d392a70ccbce747437320abdfdca51a2f66135218e8499182711717d47c2c57796105d09b25dd7cf891092d133dbfaa0b0f806051ef8c0f2665eff73676c
+Homepage: http://www.libreoffice.org
+Description: GStreamer backend for LibreOffice
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains a GStreamer backend for LibreOffices avmedia component
+ to play audio/video.
 
 Package: sharklinux-default-settings
 Architecture: all
@@ -4225,6 +5115,34 @@ Description: MateWeather shared library
  .
  This package contains the shared library.
 
+Package: libreoffice-script-provider-python
+Architecture: all
+Version: 1:6.2.6-0ubuntu0.16.04.1~lo1
+Priority: optional
+Section: python
+Source: libreoffice
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Installed-Size: 61
+Depends: libreoffice-common (= 1:6.2.6-0ubuntu0.16.04.1~lo1), libreoffice-core, python3-uno (>= 4.4.0~beta2)
+Filename: ./libreoffice-script-provider-python_6.2.6-0ubuntu0.16.04.1~lo1_all.deb
+Size: 12866
+MD5sum: 2725d4df1363fc24f5918604cf1d187b
+SHA1: 76b6c133e47009cd426f694ea62abeba9750c712
+SHA256: 8bfee56fa1a1e59f6dd1e64d8fd2ce1e4f8cd87f0e329f79128f30c0dd9c6568
+SHA512: f30236b5ed3c3895cbcf568ecfc264094ca9f3206694c74f399527fd94ec7df96a43a8ab3a4e8f45b9b267071de8b24d318d60c240c0a0954a82b384a51163b9
+Homepage: http://www.libreoffice.org
+Description: Python script support provider for LibreOffice scripting framework
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ The Scripting Framework allows LibreOffice users to write and run macros
+ in multiple languages including LibreOffice Basic, Python, Java, BeanShell
+ and JavaScript. These macros can then be assigned to menus, toolbars,
+ keyboard shortcuts, events and embedded objects.
+ .
+ This package contains the script provider to support Python.
+
 Package: libharfbuzz-bin
 Architecture: amd64
 Version: 1.7.2-1ubuntu1~16.04.1
@@ -4266,6 +5184,31 @@ SHA512: e14fe48288b1561093983e89fb2102c063e8ca7a82e9371f5e481e30d932958f19e2fed1
 Description: Slovak language pack for Thunderbird
  This package contains Slovak translations and search plugins
  for Thunderbird
+
+Package: libreoffice-style-karasa-jaga
+Architecture: all
+Version: 1:6.2.6-0ubuntu0.16.04.1~lo1
+Priority: optional
+Section: editors
+Source: libreoffice
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Installed-Size: 4557
+Provides: libreoffice-style
+Depends: libreoffice-common (= 1:6.2.6-0ubuntu0.16.04.1~lo1)
+Enhances: libreoffice-core
+Filename: ./libreoffice-style-karasa-jaga_6.2.6-0ubuntu0.16.04.1~lo1_all.deb
+Size: 3459322
+MD5sum: 134d843aa70393c7159e43af81fdd4a6
+SHA1: 9a024e284d2df42317c831911f36a2ecd262955b
+SHA256: b626a1c589623a97956d9145880f44f25e7a73fed2eb80e494d14ed15f7396af
+SHA512: 03817d5deb14f083456c330999c389d5dc1c05f4b00542975594a9a60fb78f9fe807a253f1a359e916d6134d68a217c0b0b3e8415386a8bba3df5076b170c717
+Homepage: http://www.libreoffice.org
+Description: office productivity suite -- Karasa Jaga symbol style
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the "karasa_jaga" symbol style.
 
 Package: botan2.3-dbg
 Architecture: amd64
@@ -4382,6 +5325,93 @@ Description: Development files for OpenType text shaping engine
  .
  This package contains the header files and static libraries for the
  HarfBuzz library.
+
+Package: libreoffice-help-km
+Architecture: all
+Version: 1:6.2.6-0ubuntu0.16.04.1~lo1
+Priority: optional
+Section: doc
+Source: libreoffice-l10n
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Installed-Size: 40674
+Provides: libreoffice-help (= 6.2)
+Depends: libreoffice-l10n-km, libreoffice-common (>= 1:6.1.0~), libreoffice-writer
+Recommends: libreoffice-core (>> 1:6.2.6)
+Filename: ./libreoffice-help-km_6.2.6-0ubuntu0.16.04.1~lo1_all.deb
+Size: 4131956
+MD5sum: 1976108ea49c837b848eb36c66057c7a
+SHA1: 43dfa4be192c3114ac84d512d87f7f8be3e06e45
+SHA256: a114b5b80ae787054d956180471aa8e7f1a8b6445eb87c50008e40c72bbabb74
+SHA512: ab67397d21b1523b54a949f0edc53fa9cc71f0e696a9cf826d525e9ea67f0723647bb412b61eae0de3bae57698472b8eac10779e32d3bb2516c4322cf5a2b149
+Homepage: http://www.libreoffice.org
+Description: office productivity suite -- Khmer help
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the help of LibreOffice in
+ Khmer.
+
+Package: libreoffice
+Architecture: amd64
+Version: 1:6.2.6-0ubuntu0.16.04.1~lo1
+Priority: optional
+Section: metapackages
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Installed-Size: 112
+Depends: libreoffice-base, libreoffice-calc, libreoffice-core (= 1:6.2.6-0ubuntu0.16.04.1~lo1), libreoffice-draw, libreoffice-impress, libreoffice-math, libreoffice-report-builder-bin, libreoffice-writer, libreoffice-avmedia-backend-gstreamer, python3-uno (>= 4.4.0~beta2)
+Recommends: fonts-crosextra-caladea, fonts-crosextra-carlito, fonts-dejavu, fonts-liberation, fonts-liberation2, fonts-linuxlibertine, fonts-noto-core, fonts-noto-mono, fonts-noto-ui-core, fonts-sil-gentium-basic, libreoffice-gnome | libreoffice-kde4, libreoffice-librelogo, libreoffice-nlpsolver, libreoffice-report-builder, libreoffice-script-provider-bsh, libreoffice-script-provider-js, libreoffice-script-provider-python, libreoffice-sdbc-mysql, libreoffice-sdbc-postgresql, libreoffice-wiki-publisher, libreoffice-java-common (>= 1:6.2.6~)
+Suggests: cups-bsd, firefox-esr | thunderbird | firefox, ghostscript, gnupg, gpa, hunspell-dictionary, hyphen-hyphenation-patterns, imagemagick | graphicsmagick-imagemagick-compat, libgl1, libreoffice-grammarcheck, libreoffice-help (= 6.2), libreoffice-l10n (= 6.2), libxrender1, myspell-dictionary, mythes-thesaurus, openclipart2-libreoffice | openclipart-libreoffice, pstoedit, unixodbc, gstreamer1.0-plugins-base, gstreamer1.0-plugins-good, gstreamer1.0-plugins-ugly, gstreamer1.0-plugins-bad, gstreamer1.0-libav, default-jre | sun-java6-jre | java6-runtime | jre, libsane, libreoffice-officebean
+Conflicts: libreoffice-dev (<= 1:5.0.3~rc1-2), libreoffice-dev-doc (<= 1:5.0.3~rc1-2)
+Filename: ./libreoffice_6.2.6-0ubuntu0.16.04.1~lo1_amd64.deb
+Size: 97964
+MD5sum: dc582a5de30b179318ee4234b4bbc758
+SHA1: e55a71f11d03873f080efa190a2562eed5c7c0ef
+SHA256: f830482d121eae80eee8dc34d7ff48d4cf9dd5ee7df8f8bd050d0139d156c8f3
+SHA512: f3175a38acb1e598ad74ab8cd36632b6cc41b63ee8a260fc3ebc3b85a3c904c7a165f9ca00344544f223171c41898ffa97879b5c5ae2a3daf5cebcd11553837b
+Homepage: http://www.libreoffice.org
+Description: office productivity suite (metapackage)
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This metapackage installs all components of libreoffice:
+  * libreoffice-writer: Word processor
+  * libreoffice-calc: Spreadsheet
+  * libreoffice-impress: Presentation
+  * libreoffice-draw: Drawing
+  * libreoffice-base: Database
+  * libreoffice-math: Equation editor
+ It also recommends additional packages (e.g. fonts) in order to match an
+ upstream LibreOffice install as closely as possible.
+ .
+ You can extend the functionality of LibreOffice by installing these
+ packages:
+  * hunspell-*/myspell-*: Hunspell/Myspell dictionaries
+    for use with LibreOffice
+  * libreoffice-l10n-*: UI interface translation
+  * libreoffice-help-*: User help
+  * mythes-*: Thesauri for the use with LibreOffice
+  * hyphen-*: Hyphenation patterns for LibreOffice
+  * libreoffice-gtk(2|3): Gtk UI Plugin, GNOME File Picker support
+  * libreoffice-gnome: GIO backend
+  * unixodbc: ODBC database support
+  * cups-bsd: Allows LibreOffice to detect your CUPS printer queues
+    automatically
+  * libsane: Use your sane-supported scanner with LibreOffice
+  * libxrender1: Speed up display by using Xrender library
+  * libgl1: OpenGL support
+  * openclipart-libreoffice: Open Clip Art Gallery with LibreOffice index
+    files
+  * firefox-esr | thunderbird | firefox:
+    Mozilla profile with Certificates needed for XML Security...
+  * openjdk-9-jre | openjdk-8-jre | openjdk-7-jre | java6-runtime:
+    Java Runtime Environment for use with LibreOffice
+  * pstoedit / imagemagick / ghostscript: helper tools for EPS
+  * gstreamer0.10-plugins-*: GStreamer plugins for use with LibreOffices
+    media backend
+  * libpaper-utils: papersize detection support via paperconf
+  * bluez: Bluetooth support for Impress (slideshow remote control)
 
 Package: strace
 Architecture: amd64
@@ -4590,6 +5620,34 @@ Description: Linux Libertine family of fonts
  This package contains OpenType versions (i.e., with cubic Bézier splines)
  of the fonts, with large support of OpenType features.
 
+Package: libreoffice-script-provider-bsh
+Architecture: all
+Version: 1:6.2.6-0ubuntu0.16.04.1~lo1
+Priority: optional
+Section: java
+Source: libreoffice
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Installed-Size: 94
+Depends: libreoffice-common (= 1:6.2.6-0ubuntu0.16.04.1~lo1), libreoffice-core, libreoffice-java-common, default-jre | sun-java6-jre | java6-runtime | jre, libbsh-java
+Filename: ./libreoffice-script-provider-bsh_6.2.6-0ubuntu0.16.04.1~lo1_all.deb
+Size: 32762
+MD5sum: fa7256c2eba1b5e2aed56b480dba1ecf
+SHA1: a67b76e814ba2f45441fdf61962faa253de76b1a
+SHA256: 47e42aeebbcc4360c5c025c89a8aebfaa4362c95ec0fe725c4bb05bd0b2ce6f9
+SHA512: 2660b32de5673a1c4b40a96d4559c3d6905a5e728d5f48dfca7e37564da641555bcb92b1935576a2adb70e5f44a9e4179b41f08b44e7bc99d061322e6541e187
+Homepage: http://www.libreoffice.org
+Description: BeanShell script support provider for LibreOffice scripting framework
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ The Scripting Framework allows LibreOffice users to write and run macros
+ in multiple languages including LibreOffice Basic, Python, Java, BeanShell
+ and JavaScript. These macros can then be assigned to menus, toolbars,
+ keyboard shortcuts, events and embedded objects.
+ .
+ This package contains the script provider to support BeanShell.
+
 Package: winehq-devel
 Architecture: amd64
 Version: 5.9~xenial
@@ -4751,6 +5809,32 @@ Description: LibreOffice UNO runtime environment -- public shared libraries
   - libuno_cppuhelpergcc3: additional C++ functionality for cppu
   - libuno_purpenvhelpergcc3: "purpose environments" helper
 
+Package: libreoffice-calc
+Architecture: amd64
+Version: 1:6.2.6-0ubuntu0.16.04.1~lo1
+Priority: optional
+Section: editors
+Source: libreoffice
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Installed-Size: 29139
+Depends: libreoffice-base-core (= 1:6.2.6-0ubuntu0.16.04.1~lo1), libreoffice-core (= 1:6.2.6-0ubuntu0.16.04.1~lo1), lp-solve (>= 5.5.0.13-5+b1), libc6 (>= 2.23), libgcc1 (>= 1:3.0), libicu55 (>= 55.1-1~), libstdc++6 (>= 5.2), libxml2 (>= 2.7.4), uno-libs3 (>= 5.3.0~alpha), ure
+Suggests: ocl-icd-libopencl1 | mesa-opencl-icd | beignet-opencl-icd
+Breaks: libreoffice-common (<< 1:5.4.1)
+Replaces: libreoffice-common (<< 1:5.4.1)
+Filename: ./libreoffice-calc_6.2.6-0ubuntu0.16.04.1~lo1_amd64.deb
+Size: 7210662
+MD5sum: 3ca7e221d709aa13e734d9916a16f7bf
+SHA1: 70e4323e41199afaf39137a598cdabb19ebaad39
+SHA256: 6edb59a1ac9317c14b8f21324a57eece15fb552a9814e1dea61430abc230c228
+SHA512: b12a9c16e1633e8f0010c30c96c73bbe258f3cc71d01b58570502a88842c22f22fb906ddc8b06eb68f80253f44fd7f5190554d0b11fa2ae260cf3829d0798738
+Homepage: http://www.libreoffice.org
+Description: office productivity suite -- spreadsheet
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the spreadsheet component for LibreOffice.
+
 Package: debian-mate-default-settings
 Architecture: all
 Version: 1.16.1-1~xenial4.0
@@ -4862,6 +5946,35 @@ Description: MATE Panel dock applet
     can be applied to all panels or just the panel containing the
     dock.
 
+Package: libreoffice-impress
+Architecture: amd64
+Version: 1:6.2.6-0ubuntu0.16.04.1~lo1
+Priority: optional
+Section: editors
+Source: libreoffice
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Installed-Size: 4056
+Provides: libreoffice-ogltrans
+Depends: libreoffice-core (= 1:6.2.6-0ubuntu0.16.04.1~lo1), libreoffice-draw (= 1:6.2.6-0ubuntu0.16.04.1~lo1), libc6 (>= 2.14), libepoxy0 (>= 1.0), libgcc1 (>= 1:3.0), libstdc++6 (>= 5), uno-libs3 (>= 5.3.0~alpha), ure
+Recommends: libreoffice-avmedia-backend-gstreamer
+Suggests: bluez
+Conflicts: libreoffice-ogltrans (<< 1:6.2.0~beta1~)
+Breaks: libreoffice-common (<< 1:5.4.1)
+Replaces: libreoffice-common (<< 1:5.4.1), libreoffice-ogltrans (<< 1:6.2.0~beta1~)
+Filename: ./libreoffice-impress_6.2.6-0ubuntu0.16.04.1~lo1_amd64.deb
+Size: 970844
+MD5sum: b74b27892b8b34e56927825ce2803f1e
+SHA1: e69977fd6ed82e92f10cbe8e7b6f0000826ec809
+SHA256: 9a2d93fa4122a8ffb54aca17e8a7ee950dae3bcd4cf7efbf71921781b23dd830
+SHA512: 633f2e07752776ed494e19da34afeb8fddd6db5b797661e2a453a9fe6ff0a3dc99d0a419d6e8846709611f57b4a41dbb95c76060714b1cc6fc025598f52309f1
+Homepage: http://www.libreoffice.org
+Description: office productivity suite -- presentation
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the presentation component for LibreOffice.
+
 Package: sharkqlc
 Architecture: all
 Version: 1.5
@@ -4925,6 +6038,32 @@ Description: debhelper add-on to call autoreconf and clean up after the build
  .
  For CDBS users, a rule is provided to call the dh-autoreconf programs at
  the right time.
+
+Package: libreoffice-help-pt-br
+Architecture: all
+Version: 1:6.2.6-0ubuntu0.16.04.1~lo1
+Priority: optional
+Section: doc
+Source: libreoffice-l10n
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Installed-Size: 28486
+Provides: libreoffice-help (= 6.2)
+Depends: libreoffice-l10n-pt-br, libreoffice-common (>= 1:6.1.0~), libreoffice-writer
+Recommends: libreoffice-core (>> 1:6.2.6)
+Filename: ./libreoffice-help-pt-br_6.2.6-0ubuntu0.16.04.1~lo1_all.deb
+Size: 3206196
+MD5sum: 0d90b1aabb7c2b7d5bd078abbdcff506
+SHA1: b3206d7c5178e1914df3f45c4eaf2319c870bc66
+SHA256: f953ae6237640c915017895a34489e445808a10d41fd4ba040539ed5df3cf594
+SHA512: dac669473f6e5ed2b670e66ded4ca73339a16b8b82c46726552f535428e23aaffa84e98a7cf346cec8332d86545b2e6c09ec9cb1328259f1d93e97658ba9e69e
+Homepage: http://www.libreoffice.org
+Description: office productivity suite -- Portuguese_brazilian help
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the help of LibreOffice in
+ Portuguese_brazilian.
 
 Package: shark-repo
 Architecture: all
@@ -5068,6 +6207,32 @@ Description: OpenType text shaping engine ICU backend (GObject library)
  This package contains the GObject library, providing wrapper GObject type
  bindings for all HarfBuzz objects and enums.
 
+Package: libreoffice-help-dz
+Architecture: all
+Version: 1:6.2.6-0ubuntu0.16.04.1~lo1
+Priority: optional
+Section: doc
+Source: libreoffice-l10n
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Installed-Size: 41074
+Provides: libreoffice-help (= 6.2)
+Depends: libreoffice-l10n-dz, libreoffice-common (>= 1:6.1.0~), libreoffice-writer
+Recommends: libreoffice-core (>> 1:6.2.6)
+Filename: ./libreoffice-help-dz_6.2.6-0ubuntu0.16.04.1~lo1_all.deb
+Size: 4165208
+MD5sum: f314de278019676aebca03803a18c460
+SHA1: 767c01fb30fa2d769f2dd5692955f5bf54d7742a
+SHA256: 06dd921e33987b3d2c4f0c4dbf693916acf6cc4b985dddf5a749b93bdda39e9e
+SHA512: c0c992115a3593fd912b730866621cbe323e6283b2a3830e52e7b3bf93c4da5c9185e37cd4b66249d88909bfe2ae9f8f4105dc68c211e311e210f84153d07bb5
+Homepage: http://www.libreoffice.org
+Description: office productivity suite -- Dzongkha help
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the help of LibreOffice in
+ Dzongkha.
+
 Package: libaudqt2
 Architecture: amd64
 Version: 3.10-1~webupd8~xenial0
@@ -5106,6 +6271,86 @@ Description: audacious media player (libaudqt shared library)
  can also be added through plugins.
  .
  This package provides the libaudqt shared library.
+
+Package: libreoffice-help-nl
+Architecture: all
+Version: 1:6.2.6-0ubuntu0.16.04.1~lo1
+Priority: optional
+Section: doc
+Source: libreoffice-l10n
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Installed-Size: 28521
+Provides: libreoffice-help (= 6.2)
+Depends: libreoffice-l10n-nl, libreoffice-common (>= 1:6.1.0~), libreoffice-writer
+Recommends: libreoffice-core (>> 1:6.2.6)
+Filename: ./libreoffice-help-nl_6.2.6-0ubuntu0.16.04.1~lo1_all.deb
+Size: 3246648
+MD5sum: 56f21156c996872b8b350ad4771547ad
+SHA1: ecc3d457d9f764a4cccdc806e69479a236cd7a26
+SHA256: 2001c88aa78add11efcbd711aea7e398919a7cf10e5b66525a2c875a7e5fe475
+SHA512: 566f207bff814c1129971f4a014c8606ce178d91921dc86f14cee8735019eeb15a37ce624772e7bf22326dfbcff10b6cffae9e430c3b1ab4fbf9b3fed24161d2
+Homepage: http://www.libreoffice.org
+Description: office productivity suite -- Dutch help
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the help of LibreOffice in
+ Dutch.
+
+Package: libreoffice-help-da
+Architecture: all
+Version: 1:6.2.6-0ubuntu0.16.04.1~lo1
+Priority: optional
+Section: doc
+Source: libreoffice-l10n
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Installed-Size: 27802
+Provides: libreoffice-help (= 6.2)
+Depends: libreoffice-l10n-da, libreoffice-common (>= 1:6.1.0~), libreoffice-writer
+Recommends: libreoffice-core (>> 1:6.2.6)
+Filename: ./libreoffice-help-da_6.2.6-0ubuntu0.16.04.1~lo1_all.deb
+Size: 3262716
+MD5sum: 9f54eeaa8b6467e5f157ee55d0ae699d
+SHA1: 822ede912341ddd6afd905734323b800288244b0
+SHA256: dd4a4fb985f0ee434b1437b8295996bf36b264c8ee85e8f3474a10a828766fc8
+SHA512: 3e5f827a9e56405c48034307c97e7f7742e4faea4d473c7c6a1fd48419c8dce0e08db4288c7dad863128fbb45d32c47f662447fb0f1db0085615cbedf93d0faa
+Homepage: http://www.libreoffice.org
+Description: office productivity suite -- Danish help
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the help of LibreOffice in
+ Danish.
+
+Package: libreoffice-gtk2
+Architecture: amd64
+Version: 1:6.2.6-0ubuntu0.16.04.1~lo1
+Priority: optional
+Section: gnome
+Source: libreoffice
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Installed-Size: 656
+Depends: libreoffice-core (= 1:6.2.6-0ubuntu0.16.04.1~lo1), libatk1.0-0 (>= 1.12.4), libc6 (>= 2.14), libcairo2 (>= 1.2.4), libgcc1 (>= 1:3.0), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.38.0), libgtk2.0-0 (>= 2.24.0), libpango-1.0-0 (>= 1.14.0), libstdc++6 (>= 5), libx11-6, uno-libs3 (>= 5.1.0~alpha), ure
+Breaks: libreoffice-gtk (<< 1:5.2.0~)
+Replaces: libreoffice-gtk (<< 1:5.2.0~)
+Enhances: libreoffice
+Filename: ./libreoffice-gtk2_6.2.6-0ubuntu0.16.04.1~lo1_amd64.deb
+Size: 206176
+MD5sum: c4497049a55cb8f41a021bb05ef29859
+SHA1: 7c7599deaff3a62390d3a48b7359a3510fb51eef
+SHA256: db6d1d1028a43775ce5cd77c7b29d207c82b1b9913b0001348cbadef6a4fe72f
+SHA512: 73717a48e73be7dd0daa9d1dd36bee3f7d779c0f40702d798726ac9697f20285eff31f6801a5d496fdf6609d6fc3f862bed6259d4c82330570ae610057ff0ddc
+Homepage: http://www.libreoffice.org
+Description: office productivity suite -- GTK+ 2 integration
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the Gtk plugin for drawing LibreOffices widgets
+ with Gtk+ 2 and a Gtk/GNOMEish File Picker and print dialog when running
+ under GNOME.
 
 Package: rsync
 Architecture: amd64
@@ -5437,6 +6682,32 @@ Description: audacious media player (libaudgui shared library)
  .
  This package provides the libaudgui shared library.
 
+Package: libreoffice-help-ru
+Architecture: all
+Version: 1:6.2.6-0ubuntu0.16.04.1~lo1
+Priority: optional
+Section: doc
+Source: libreoffice-l10n
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Installed-Size: 32829
+Provides: libreoffice-help (= 6.2)
+Depends: libreoffice-l10n-ru, libreoffice-common (>= 1:6.1.0~), libreoffice-writer
+Recommends: libreoffice-core (>> 1:6.2.6)
+Filename: ./libreoffice-help-ru_6.2.6-0ubuntu0.16.04.1~lo1_all.deb
+Size: 3503450
+MD5sum: ddaef4e9cf40dda4280c517bef20be2a
+SHA1: 6a01c2d51e26019104c259b2e6c0f9d44dc93f40
+SHA256: 2dab807f35bc9716955b8445d10eab57dda067718a1252c074d1c6172c09855c
+SHA512: 710c73725331e9a72533ccdfb65582037f8c4c5f779589bc49aab4d0af8f45873377eb267b95a6edf91441408aa24b175ce98191fa4b613c74a2c94f78df06db
+Homepage: http://www.libreoffice.org
+Description: office productivity suite -- Russian help
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the help of LibreOffice in
+ Russian.
+
 Package: libpo-teambuilder1
 Architecture: amd64
 Version: 2.7.2.1-1~getdeb1
@@ -5661,6 +6932,31 @@ Description: MATE utilities for netbooks (common files)
  .
  This package contains the architecture independent files.
 
+Package: libreoffice-draw
+Architecture: amd64
+Version: 1:6.2.6-0ubuntu0.16.04.1~lo1
+Priority: optional
+Section: editors
+Source: libreoffice
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Installed-Size: 12594
+Depends: libreoffice-core (= 1:6.2.6-0ubuntu0.16.04.1~lo1), libavahi-client3 (>= 0.6.16), libavahi-common3 (>= 0.6.16), libc6 (>= 2.14), libdbus-1-3 (>= 1.9.14), libgcc1 (>= 1:3.0), libglib2.0-0 (>= 2.38.0), libicu55 (>= 55.1-1~), liblcms2-2 (>= 2.2+git20110628), libpng12-0 (>= 1.2.13-4), libstdc++6 (>= 5.2), libxml2 (>= 2.7.4), uno-libs3 (>= 5.3.0~alpha), ure, zlib1g (>= 1:1.1.4)
+Breaks: libreoffice-common (<< 1:5.4.1), libreoffice-impress (<< 1:5.2.0-2)
+Replaces: libreoffice-common (<< 1:5.4.1), libreoffice-impress (<< 1:5.2.0-2)
+Filename: ./libreoffice-draw_6.2.6-0ubuntu0.16.04.1~lo1_amd64.deb
+Size: 3397022
+MD5sum: 7d8dc82bf054234d6818e3a4e70f044a
+SHA1: 7144c3fd8971787552aed9559f8e7da23fee8a21
+SHA256: b489d3221a3e8652b8c10ecdc37f6db30b18d057d23caccf6ead84745cbddfa8
+SHA512: 61824e440c006be6f8b3ee87a2c4e936d6b71b993c035c7c4ad6ab2b548d77f9ef1f358c369d4f441076b60027db239b7073e7a99a51d38660740192f7faaaf5
+Homepage: http://www.libreoffice.org
+Description: office productivity suite -- drawing
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the drawing component for LibreOffice.
+
 Package: thunderbird-locale-hr
 Architecture: amd64
 Version: 1:60.0+build4-0ubuntu0.16.04.1
@@ -5884,6 +7180,30 @@ Description: Grive2: an open source Linux client for Google Drive
  synchronized directory. It will also start downloading files from your Google
  Drive to that directory.
 
+Package: libreoffice-officebean
+Architecture: amd64
+Version: 1:6.2.6-0ubuntu0.16.04.1~lo1
+Priority: optional
+Section: java
+Source: libreoffice
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Installed-Size: 108
+Depends: libreoffice-core (= 1:6.2.6-0ubuntu0.16.04.1~lo1), libreoffice-java-common (>= 1:6.2.6~), default-jre | sun-java6-jre | java6-runtime | jre, ure, libc6 (>= 2.4)
+Filename: ./libreoffice-officebean_6.2.6-0ubuntu0.16.04.1~lo1_amd64.deb
+Size: 35278
+MD5sum: 244e55abdb4f51943c815443c184bfca
+SHA1: 9b3b54d8055282461ca9f50a7078b778bc8e1380
+SHA256: a06c46258491da48c5414ea4bed0224720fb67992b87230f5af7106cef11505d
+SHA512: b790c0a1f35bc8c1e5925294028f708577670b22fb6491ebe185d3b971ce08572a1dc6c654e7d0bd14c2bb78deee3734264cecb4a612792fe83cd868abcaedb0
+Homepage: http://www.libreoffice.org
+Description: office productivity suite -- Java bean
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the LibreOffice Office Bean for embedding
+ LibreOffice in custom Java applications.
+
 Package: libreoffice-evolution
 Architecture: amd64
 Version: 1:6.3.1~rc1-0ubuntu0.16.04.1~lo6
@@ -5910,6 +7230,32 @@ Description: office productivity suite -- Evolution addressbook support
  This package allows LibreOffice to access Evolution address books.
  You need to install evolution separately.
 
+Package: libreoffice-help-zh-cn
+Architecture: all
+Version: 1:6.2.6-0ubuntu0.16.04.1~lo1
+Priority: optional
+Section: doc
+Source: libreoffice-l10n
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Installed-Size: 31190
+Provides: libreoffice-help (= 6.2)
+Depends: libreoffice-l10n-zh-cn, libreoffice-common (>= 1:6.1.0~), libreoffice-writer
+Recommends: libreoffice-core (>> 1:6.2.6)
+Filename: ./libreoffice-help-zh-cn_6.2.6-0ubuntu0.16.04.1~lo1_all.deb
+Size: 4687624
+MD5sum: 1eede627278d43e2bd02ac71e37d11dc
+SHA1: 99b7f975498e535de4f8a632938ab299d6173945
+SHA256: e9819f417479d30f3817e0472d4fafcd008aff8294135eb23937c1f4acc96f06
+SHA512: f86018d39ca051e4eb3d04bd9ed34ae7fe61d80dea78415309ddf7c5f9c7ff26f760621164bf4a17a497c4e66596f515d057e2141fb2cec78bb17bccd26b90fb
+Homepage: http://www.libreoffice.org
+Description: office productivity suite -- Chinese_simplified help
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the help of LibreOffice in
+ Chinese_simplified.
+
 Package: megamario
 Architecture: amd64
 Version: 1.7-1~getdeb1
@@ -5930,6 +7276,32 @@ Description: Super Mario Bros. 1 clone
  original features - with better graphics, higher resolution, smoother
  movement and new levels. The story of Mario and Luigi continues,
  in old-school style.
+
+Package: libreoffice-help-cs
+Architecture: all
+Version: 1:6.2.6-0ubuntu0.16.04.1~lo1
+Priority: optional
+Section: doc
+Source: libreoffice-l10n
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Installed-Size: 27677
+Provides: libreoffice-help (= 6.2)
+Depends: libreoffice-l10n-cs, libreoffice-common (>= 1:6.1.0~), libreoffice-writer
+Recommends: libreoffice-core (>> 1:6.2.6)
+Filename: ./libreoffice-help-cs_6.2.6-0ubuntu0.16.04.1~lo1_all.deb
+Size: 3201270
+MD5sum: daee1817846a01c027afafe0e8898b0d
+SHA1: 0a04972d4069c522b7ef9d46dc9913315ac555b6
+SHA256: 7c0e9c8db96d0a5b1898fdb05370260bfe36d0a5a5fa1b83527a5a759399b1a0
+SHA512: 4d887ea25523dc7cd1b70a282710236af102d04450d1adafe0a8c47d68264f0bc1ce61705708b3037b2e8a95bc945a07a49e6927caa3161e34bebe2731a07e61
+Homepage: http://www.libreoffice.org
+Description: office productivity suite -- Czech help
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the help of LibreOffice in
+ Czech.
 
 Package: thunderbird-locale-nb
 Architecture: amd64
@@ -6081,6 +7453,32 @@ SHA512: 50b0fcd5adacf4eb1968adf9d010aaa52074b4d37c5eadc59950c1252f624766cc2a2545
 Homepage: http://www.libreoffice.org
 Description: transitional package for Galaxy symbol style
  You can safely remove this package.
+
+Package: libreoffice-help-ca
+Architecture: all
+Version: 1:6.2.6-0ubuntu0.16.04.1~lo1
+Priority: optional
+Section: doc
+Source: libreoffice-l10n
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Installed-Size: 57190
+Provides: libreoffice-help (= 6.2)
+Depends: libreoffice-l10n-ca, libreoffice-common (>= 1:6.1.0~), libreoffice-writer
+Recommends: libreoffice-core (>> 1:6.2.6)
+Filename: ./libreoffice-help-ca_6.2.6-0ubuntu0.16.04.1~lo1_all.deb
+Size: 6352782
+MD5sum: ed59cfaee475922b21c8c91310336458
+SHA1: e5128097320e5ae661079a41aee4e194d14348d4
+SHA256: d5ee15008be943ded8a9f1ef4f0ef21e7e210ee730df709c76c619b5fa766270
+SHA512: 0883201f503b223d158eff087e97d8536001e0903e06c95321afb02c00e6fe081c4a134143ae14580e9df9fb8f434f84b52e1f29ffd373d1e35867338670e6e1
+Homepage: http://www.libreoffice.org
+Description: office productivity suite -- Catalan help
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the help of LibreOffice in
+ Catalan.
 
 Package: xpra-html5
 Architecture: amd64
@@ -6311,6 +7709,32 @@ Description: MATE Desktop Environment (extra components, metapackage)
  This package installs an extra set of MATE components that are
  also part of the official MATE release.
 
+Package: libreoffice-help-fr
+Architecture: all
+Version: 1:6.2.6-0ubuntu0.16.04.1~lo1
+Priority: optional
+Section: doc
+Source: libreoffice-l10n
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Installed-Size: 29674
+Provides: libreoffice-help (= 6.2)
+Depends: libreoffice-l10n-fr, libreoffice-common (>= 1:6.1.0~), libreoffice-writer
+Recommends: libreoffice-core (>> 1:6.2.6)
+Filename: ./libreoffice-help-fr_6.2.6-0ubuntu0.16.04.1~lo1_all.deb
+Size: 3348246
+MD5sum: 7b0bba44e874ac63b1cb81eaa6405fbc
+SHA1: f1b0161a136b90a539c088af8ebf07bb43cb3704
+SHA256: 764167311a6aab327fcd65983fe66ca207397758d566b65868e19b9b333d2d61
+SHA512: d447f738b4872f271afbfe291e25806e9fe4e0f4466923d038b9fa9223a56aa137e89215477cc084e7b7d7c7812ea7a8db837ec00010995739d8ded680d1fad2
+Homepage: http://www.libreoffice.org
+Description: office productivity suite -- French help
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the help of LibreOffice in
+ French.
+
 Package: libaudgui5
 Architecture: amd64
 Version: 3.10-1~webupd8~xenial0
@@ -6374,6 +7798,33 @@ Description: MATE desktop utilities
   - mate-system-log, a log viewing application
   - mate-screenshot, a tool to take desktop screenshots and save them into
     a file
+
+Package: libreoffice-nlpsolver
+Architecture: all
+Version: 0.9+LibO6.2.6-0ubuntu0.16.04.1~lo1
+Priority: optional
+Section: math
+Source: libreoffice (1:6.2.6-0ubuntu0.16.04.1~lo1)
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Installed-Size: 210
+Depends: libreoffice-calc, libreoffice-core, libreoffice-java-common, default-jre | sun-java6-jre | java6-runtime | jre
+Filename: ./libreoffice-nlpsolver_0.9+LibO6.2.6-0ubuntu0.16.04.1~lo1_all.deb
+Size: 160006
+MD5sum: adb355b93d7d520cb0f0761dbef3601c
+SHA1: 515649be1a945508e58b58a65824f02ca6229c10
+SHA256: d26709ed3f44cc38013761479c08aa8f75cededccf283c1c6699d5f93d40e053
+SHA512: 116299ab1615a9045827dd8cc499d40d1c172564f2b23a09253c4b75e26d5a51a6808ca7be5daf116c580cd8df50535ce04e51a162a2f649b7b54def8936eaaa
+Homepage: http://www.libreoffice.org
+Description: "Solver for Nonlinear Programming" extension for LibreOffice
+ By default LibreOffice Calc ships with a solver engine for linear
+ programming only. This allows the optimization of models to a certain degree.
+ However, if the formulas or constraints become more complex,
+ nonlinear programming is required. That missing gap is now filled by the
+ Solver for Nonlinear Programming extension.
+ .
+ Currently it incorporates two Evolutionary Algorithms which are able to
+ handle floating point and integer variables as well as nonlinear constraints.
 
 Package: mate-notification-daemon-common
 Architecture: all
@@ -6510,6 +7961,42 @@ SHA512: 711e653ffa2348f9932534b173d6e82aa1f7d882d2c8b2b5d185dd45dbe86e7502fe26e5
 Homepage: http://www.libreoffice.org
 Description: data files for LibreOffices "smoketest"
  Data files for the LibreOffice "smoketest".
+
+Package: uno-libs3
+Architecture: amd64
+Version: 6.2.6-0ubuntu0.16.04.1~lo1
+Priority: optional
+Section: libs
+Source: libreoffice (1:6.2.6-0ubuntu0.16.04.1~lo1)
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Installed-Size: 2521
+Depends: libc6 (>= 2.15), libgcc1 (>= 1:3.0), libstdc++6 (>= 5.2)
+Breaks: libreoffice-core (<< 1:4.3.0~)
+Replaces: ure (<< 1:5.0.0~rc2-1)
+Filename: ./uno-libs3_6.2.6-0ubuntu0.16.04.1~lo1_amd64.deb
+Size: 901600
+MD5sum: f2c803f30275494eb3fd7b082cd85850
+SHA1: 638fb0487c8279ada6112c37fc1bd79093ba92b0
+SHA256: 19909b929285fa29ab41dadf4d00521376e4a604777ba432517a156043d1a8ea
+SHA512: 8d2c1e6e77b3d5207c2f5f1a74b6775134380cceadb8a27dd927e29895fe82c591d679a5e9630d474c7ff14f3d67ec77550a93ccbadde342ef31d17cf70145c7
+Homepage: http://www.libreoffice.org
+Description: LibreOffice UNO runtime environment -- public shared libraries
+ The Uno Runtime Environment (URE) is the well-known UNO component model
+ of LibreOffice, packaged up as an individual product.
+ .
+ It offers you a flexible, low-overhead component model that is most ideal
+ for (but not limited to) combining in one application components written in
+ different computer languages, and developed by different parties. You can use
+ it to create any kind of application, in whatever application domain you can
+ imagine.
+ .
+ This package contains the public libraries:
+  - libuno_sal: System Abstraction Layer (C Interface)
+  - libuno_salhelpergcc3: additional C++ functionality for sal
+  - libuno_cppu: C++ UNO bridge (C Interface)
+  - libuno_cppuhelpergcc3: additional C++ functionality for cppu
+  - libuno_purpenvhelpergcc3: "purpose environments" helper
 
 Package: libreoffice-report-builder-bin
 Architecture: amd64
@@ -6676,6 +8163,36 @@ Description: office productivity suite -- GNOME integration
  .
   * libreoffice-evolution: Evolution addressbook support
   * evolution
+
+Package: libreoffice-base-core
+Architecture: amd64
+Version: 1:6.2.6-0ubuntu0.16.04.1~lo1
+Priority: optional
+Section: editors
+Source: libreoffice
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Installed-Size: 2792
+Depends: libreoffice-core (= 1:6.2.6-0ubuntu0.16.04.1~lo1), libboost-date-time1.58.0, libc6 (>= 2.14), libgcc1 (>= 1:3.4), libstdc++6 (>= 5.2), uno-libs3 (>= 5.3.0~alpha), ure
+Suggests: libreoffice-base
+Replaces: libreoffice-base-drivers (<< 1:6.1.0-0ubuntu2)
+Filename: ./libreoffice-base-core_6.2.6-0ubuntu0.16.04.1~lo1_amd64.deb
+Size: 763072
+MD5sum: f14b720b6f09f28c3a1c2b77f274f7cb
+SHA1: cfa8e7386a1b37d5d2ce751ed7c98b4d3cd6ab25
+SHA256: 6e795e0d36407832a762268bb13b860c111a9bfafbf8500097af24840c97ab00
+SHA512: faaa04cd84fb94e17493fc85445724626a59476e6a648209c1182c29a17e71f115a3c0bfae3d01adafbf4c90481feab2c34b35f94cf0ccbfde0aa233b04ff68c
+Homepage: http://www.libreoffice.org
+Description: office productivity suite -- shared library
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains common libraries of LibreOffice Base used by
+ Base, Writer and Calc.
+ .
+ If you need full Base functionality (or actual database drivers), please
+ install libreoffice-base (and/or libreoffice-base-drivers and/o
+ libreoffice-sdbc-*).
 
 Package: mate-indicator-applet-common
 Architecture: all
@@ -7123,6 +8640,32 @@ Description: GObject introspection data for MATE panel
  It can be used by packages using the GIRepository format to generate
  dynamic bindings.
 
+Package: libreoffice-help-de
+Architecture: all
+Version: 1:6.2.6-0ubuntu0.16.04.1~lo1
+Priority: optional
+Section: doc
+Source: libreoffice-l10n
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Installed-Size: 29237
+Provides: libreoffice-help (= 6.2)
+Depends: libreoffice-l10n-de, libreoffice-common (>= 1:6.1.0~), libreoffice-writer
+Recommends: libreoffice-core (>> 1:6.2.6)
+Filename: ./libreoffice-help-de_6.2.6-0ubuntu0.16.04.1~lo1_all.deb
+Size: 3385426
+MD5sum: 1c3b8b073f58d63f9e9ecba981a85fdb
+SHA1: c7be1d7e9c0b28d02d47efe12ee1529735fba8a6
+SHA256: 2bdb48a990c6c253acbfdfc97e895cddd1fa8a261bec9ba3febc2b228c8adc1d
+SHA512: acb830142df7400897d2481e57a61daafd3404c18aacc31501328a09a3dc953f742dd8aa073ba037e3d3164406d1d7b86a8ce65949c555338c36f592d00dde72
+Homepage: http://www.libreoffice.org
+Description: office productivity suite -- German help
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the help of LibreOffice in
+ German.
+
 Package: mate-terminal-common
 Architecture: all
 Version: 1.16.3-1~xenial1.0
@@ -7152,6 +8695,35 @@ Description: MATE terminal emulator application (common files)
  window (tabs) and profiles support.
  .
  This package contains the architecture independent files.
+
+Package: libreoffice-librelogo
+Architecture: all
+Version: 1:6.2.6-0ubuntu0.16.04.1~lo1
+Priority: optional
+Section: misc
+Source: libreoffice
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Installed-Size: 446
+Depends: libreoffice-core, libreoffice-script-provider-python, libreoffice-writer
+Filename: ./libreoffice-librelogo_6.2.6-0ubuntu0.16.04.1~lo1_all.deb
+Size: 195448
+MD5sum: 582d80a06470b5e7b72f8b3ee04c9d9a
+SHA1: 4488c3dae0b579c7686b1da1b0ef824ec7ed92de
+SHA256: 47be1b56920ee7fc91a7b58c0d528527f90a60cb4d6a5114e852c52564199062
+SHA512: 95f918b7d7557e99d9efc73042b0b2abc9c2ba2a86d3bb6163c86362e05268f542cbc597e973935b231a8ac83704d740ebb4ce83294c90bd15e0ccc5bd6bcf74
+Homepage: http://librelogo.org
+Description: Logo-like progamming language for LibreOffice
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains Librelogo, which is a pyuno-based Logo-like progamming
+ language with interactive vectorgraphics for education and DTP
+  - basic Logo syntax for back compatibility with educational Logo systems
+  - interactive vectorgraphics in LibreOffice Writer
+  - native commands (easily translatable)
+  - Python data structures (list, tuple, set, dictionary) and other Python
+    features
 
 Package: mate-user-share
 Architecture: amd64
@@ -7331,6 +8903,26 @@ Description: Armenian language pack for Thunderbird
  This package contains Armenian translations and search plugins
  for Thunderbird
 
+Package: libreoffice-subsequentcheckbase
+Architecture: all
+Version: 1:6.2.6-0ubuntu0.16.04.1~lo1
+Priority: optional
+Section: libs
+Source: libreoffice
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Installed-Size: 3031
+Depends: junit4 (>= 4.8.2-2), libreoffice-common (= 1:6.2.6-0ubuntu0.16.04.1~lo1)
+Filename: ./libreoffice-subsequentcheckbase_6.2.6-0ubuntu0.16.04.1~lo1_all.deb
+Size: 2657410
+MD5sum: 2349e528904579a913f5271d6740e3f9
+SHA1: 774190a94eb4b317a484d900da82427d8df79813
+SHA256: 564129a5ea84d34d75b78e4b00fe189e3f6aedb7aae6973e337d1e7d975d398d
+SHA512: 493eb4741a45078496455a0fa4bfe0107e8725473d0ec6b932fd0d6c9cdb15b2ab7722359fc015095aebc79fff844a872d5871e1f34b9ccf98b35db2afd8fb85
+Homepage: http://www.libreoffice.org
+Description: LibreOffice java test libraries
+ Java libraries LibreOffice subsequentchecks integration test suite
+
 Package: caja-dropbox
 Architecture: amd64
 Version: 1.16.0-1~xenial3.1
@@ -7353,6 +8945,32 @@ Description: Dropbox integration for Caja
  .
  To use this package you need to install the proprietary dropbox package
  from https://www.dropbox.com/install.
+
+Package: libreoffice-help-eu
+Architecture: all
+Version: 1:6.2.6-0ubuntu0.16.04.1~lo1
+Priority: optional
+Section: doc
+Source: libreoffice-l10n
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Installed-Size: 28167
+Provides: libreoffice-help (= 6.2)
+Depends: libreoffice-l10n-eu, libreoffice-common (>= 1:6.1.0~), libreoffice-writer
+Recommends: libreoffice-core (>> 1:6.2.6)
+Filename: ./libreoffice-help-eu_6.2.6-0ubuntu0.16.04.1~lo1_all.deb
+Size: 3272106
+MD5sum: d745c2e201f1defe6bf402cf56664ddb
+SHA1: 989a80ff043e61c67c6580a8dc15e65d04976c61
+SHA256: ad44d5dea41081214bb0f1554def2a4c3b4fd6d315c0c41bb61b092a3c26f340
+SHA512: 7f0865926c0bcc39c35e4296df3ff9112cad4f7fc1fc16309654b982a4b453709c005c9ee5d8ceb9258a00e737c6bee052ca737ac9377cb5c66759135932be20
+Homepage: http://www.libreoffice.org
+Description: office productivity suite -- Basque help
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the help of LibreOffice in
+ Basque.
 
 Package: seccomp
 Architecture: amd64
@@ -7498,6 +9116,25 @@ Description: library for reading, creating, and modifying zip archives (runtime)
  .
  This package contains the files necessary for running applications that
  use the libzip library.
+
+Package: libreoffice-style-human
+Architecture: all
+Version: 1:6.2.6-0ubuntu0.16.04.1~lo1
+Priority: extra
+Section: oldlibs
+Source: libreoffice
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Installed-Size: 12
+Filename: ./libreoffice-style-human_6.2.6-0ubuntu0.16.04.1~lo1_all.deb
+Size: 2630
+MD5sum: bbda13dbe670ef9893898cd3abb19ce3
+SHA1: 75c98d5f90e78fc37b2f9a17459bcbcd3448eebd
+SHA256: 332d42ea974fb76164d3810af3e2d3f1c6c39d1a5a62758383d6562b90b2edbf
+SHA512: d34da7693cb1c04564bac0aabf3140215fd7491acaedb66411371cf78a8859546fc8ef607c0903fdaaafa522bc631eeab4763129ccf3461258cd0db0961eaaef
+Homepage: http://www.libreoffice.org
+Description: transitional package for Human symbol style
+ You can safely remove this package.
 
 Package: pokemon-online-client
 Architecture: amd64
@@ -7689,6 +9326,25 @@ Description: WINE Is Not An Emulator - runs MS Windows programs
  .
  This package contains the files needed to support 32-bit Windows
  programs.
+
+Package: libreoffice-systray
+Architecture: all
+Version: 1:6.2.6-0ubuntu0.16.04.1~lo1
+Priority: extra
+Section: oldlibs
+Source: libreoffice
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Installed-Size: 12
+Filename: ./libreoffice-systray_6.2.6-0ubuntu0.16.04.1~lo1_all.deb
+Size: 2634
+MD5sum: 390d5fc6bac089c8e3baa12f8d0e4849
+SHA1: fdfdf4e72e32fa79edb44f8a55d1ecf471b6bca4
+SHA256: d4264c67d97a155024d7a86950fb88b20f08ba8cddf8e66c7c43766df5c9fa24
+SHA512: 686efddad4cd480669038a830b8450635f399c10a850a2ffa6b520cbff370e9c1ddfd741492345c37433d2d53e13c569913aacd7c4546e9b4cf42d459a614472
+Homepage: http://www.libreoffice.org
+Description: transitional package for removed LibreOffice "Quickstarter"
+ You can safely remove this package.
 
 Package: gir1.2-mate-menu
 Architecture: amd64
@@ -7963,6 +9619,59 @@ Description: office productivity suite -- equation editor
  .
  This package contains the equation editor component for LibreOffice.
 
+Package: libreoffice-style-tango
+Architecture: all
+Version: 1:6.2.6-0ubuntu0.16.04.1~lo1
+Priority: optional
+Section: editors
+Source: libreoffice
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Installed-Size: 1720
+Provides: libreoffice-style
+Depends: libreoffice-common (= 1:6.2.6-0ubuntu0.16.04.1~lo1)
+Suggests: tango-icon-theme
+Replaces: libreoffice-common (<= 1:4.3.0~beta2-2)
+Enhances: libreoffice-core
+Filename: ./libreoffice-style-tango_6.2.6-0ubuntu0.16.04.1~lo1_all.deb
+Size: 1208084
+MD5sum: 50cf767b40c4c7bb599dbd67df97cbe4
+SHA1: 87c67bbb944b942d4da7195bb315efe7e15e89f6
+SHA256: a6c9f1e8eb6dec8f3c2e80a98a2c65db6fa89258da1f4d9a1c9abee688aa4595
+SHA512: 556ccd44a0bff9d3c04a6b6201b2701fe63f503877b8a1a0133adf50e6fd6b520c22d10ae0fe6c8be87777b42a680354f537ef5e5d42aabdf8a72d82024e7a81
+Homepage: http://www.libreoffice.org
+Description: office productivity suite -- Tango symbol style
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the "tango" symbol style.
+
+Package: libreoffice-sdbc-postgresql
+Architecture: amd64
+Version: 1:6.2.6-0ubuntu0.16.04.1~lo1
+Priority: optional
+Section: misc
+Source: libreoffice
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Installed-Size: 932
+Depends: libreoffice-core (= 1:6.2.6-0ubuntu0.16.04.1~lo1), libc6 (>= 2.14), libgcc1 (>= 1:3.0), libpq5 (>= 9.0~), libstdc++6 (>= 5), uno-libs3 (>= 5.1.0~alpha), ure
+Suggests: postgresql (>= 8.4)
+Enhances: libreoffice-base-drivers
+Filename: ./libreoffice-sdbc-postgresql_6.2.6-0ubuntu0.16.04.1~lo1_amd64.deb
+Size: 228250
+MD5sum: 02ecfe7d05792b151204f0dd9d83966c
+SHA1: bb2059c13c642422538c0db5a025c97b11f1f895
+SHA256: f738ae567b49e9e5c3b6e56233f92a41628da5b5961cc87e48101d58972dc742
+SHA512: 7c6cbc380dafaf94b010d530d71e595965039eed4b8462dbf41fc3c9ca1fc8b4d79c17f77f94f9f125bec3d8e28bd3aaa78cb5ba17c37f5639846e8f080316da
+Homepage: http://wiki.documentfoundation.org/PostgreSQL-SDBC
+Description: PostgreSQL SDBC driver for LibreOffice
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ The PostgreSQL SDBC Driver allows one to use the PostgreSQL database from
+ LibreOffice without any wrapper layer such as ODBC or JDBC.
+
 Package: opensonic
 Architecture: amd64
 Version: 0.1.4-1~getdeb4~saucy
@@ -8226,6 +9935,35 @@ Description: Import missing GPG keys automatically
  .
  To use it, run: sudo launchpad-getkeys
 
+Package: libreofficekit-dev
+Architecture: amd64
+Version: 1:6.2.6-0ubuntu0.16.04.1~lo1
+Priority: optional
+Section: libdevel
+Source: libreoffice
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Installed-Size: 242
+Depends: gir1.2-lokdocview-0.1 (= 1:6.2.6-0ubuntu0.16.04.1~lo1)
+Recommends: libreoffice-core, libreofficekit-data
+Suggests: libgtk-3-dev
+Replaces: gir1.2-lokdocview-0.1 (<< 1:5.4.0~rc1)
+Filename: ./libreofficekit-dev_6.2.6-0ubuntu0.16.04.1~lo1_amd64.deb
+Size: 114022
+MD5sum: dbf057a677c1fa9c39dc2a84d3ef3a0e
+SHA1: 927a424912f78e7900d4e8f6ab866d6654b1fb0b
+SHA256: bb29559bb1d987480baecf9e6af7b3e9cf4a608269e503515076ab577b4d483d
+SHA512: 0e30419abecb6fe7f15543395cd3e8fd614176d538ad05638cc7c688980751eb68522715943bb5cc21b44eba4055ee689a71bdd0547d2b921231b41a9525a0a7
+Homepage: http://www.libreoffice.org
+Description: LibreOfficeKit -- headers
+ LibreOfficeKit can be used for accessing LibreOffice functionality through
+ C/C++, without any need to use UNO.
+ .
+ For now it only offers document conversion (in addition to an experimental
+ tiled rendering API).
+ .
+ This package contains the headers needed for using LibreOfficeKit.
+
 Package: libatrildocument3
 Architecture: amd64
 Version: 1.16.1-1~xenial3.1
@@ -8297,6 +10035,32 @@ SHA512: c205e5ec88991dc942eeb5dc036581e9ddfe56291f6076a5479d6840b037fdfd7e7d3e03
 Description: Transitional Spanish language pack for Thunderbird
  This is a transitional package to ensure that upgrades work correctly.
  It can be safely removed
+
+Package: libreoffice-help-es
+Architecture: all
+Version: 1:6.2.6-0ubuntu0.16.04.1~lo1
+Priority: optional
+Section: doc
+Source: libreoffice-l10n
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Installed-Size: 28982
+Provides: libreoffice-help (= 6.2)
+Depends: libreoffice-l10n-es, libreoffice-common (>= 1:6.1.0~), libreoffice-writer
+Recommends: libreoffice-core (>> 1:6.2.6)
+Filename: ./libreoffice-help-es_6.2.6-0ubuntu0.16.04.1~lo1_all.deb
+Size: 3335324
+MD5sum: 42c8a2f6ddf094bc0c2eb45c96a1d8f0
+SHA1: 8b531a1b5ec0fed23ddfeb24b40121ff1b9b4412
+SHA256: e47f57a1cd0f36e493d9c3f93a162f8483656f5fe759c3c0a6641d64ba97b627
+SHA512: 6c2a6e2dff5487acf7ea57bacbc0f450ba9e32b3b3087e3b3c9fc80f6803eff3e7c9542d4c1d6b7956ff178cd08e14d064550b08b91bbe765aab6d87cfbfffd7
+Homepage: http://www.libreoffice.org
+Description: office productivity suite -- Spanish help
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the help of LibreOffice in
+ Spanish.
 
 Package: lxcfs
 Architecture: amd64
@@ -8375,6 +10139,32 @@ SHA512: 8338ec76b34300f763350cbcdf64effec64f660f01de2adbf5cdf535900ee253f65dc544
 Description: Transitional Traditional Chinese language pack for Thunderbird
  This is a transitional package to ensure that upgrades work correctly.
  It can be safely removed
+
+Package: libreoffice-help-en-us
+Architecture: all
+Version: 1:6.2.6-0ubuntu0.16.04.1~lo1
+Priority: optional
+Section: doc
+Source: libreoffice-l10n
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Installed-Size: 26000
+Provides: libreoffice-help (= 6.2)
+Depends: libreoffice-l10n-en-us, libreoffice-common (>= 1:6.1.0~), libreoffice-writer
+Recommends: libreoffice-core (>> 1:6.2.6)
+Filename: ./libreoffice-help-en-us_6.2.6-0ubuntu0.16.04.1~lo1_all.deb
+Size: 2709154
+MD5sum: 64f4d5bfdd97970219aa9edaa8ffcb75
+SHA1: 87077c3109c3e1b5f4a381a150e19bcac8a22d43
+SHA256: cd1b43bef804c608552def02aaa4739b54c67c24e8a1d48e2586c9938dadad89
+SHA512: db34c6faf3634d457630e96a6a3c193dc0e241814bfb2c7a754d05f091f074f7151391d6564256f072602774def6fc8ca60de1bd13f2e9dfa745ef6697c5bf39
+Homepage: http://www.libreoffice.org
+Description: office productivity suite -- English_american help
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the help of LibreOffice in
+ English_american.
 
 Package: thunderbird-locale-id
 Architecture: amd64
@@ -8676,6 +10466,32 @@ Description: fast, scalable, distributed revision control system
  tree visualizer, tools for interoperating with other VCS's, or a web
  interface, is provided as separate git* packages.
 
+Package: libreoffice-help-hu
+Architecture: all
+Version: 1:6.2.6-0ubuntu0.16.04.1~lo1
+Priority: optional
+Section: doc
+Source: libreoffice-l10n
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Installed-Size: 29055
+Provides: libreoffice-help (= 6.2)
+Depends: libreoffice-l10n-hu, libreoffice-common (>= 1:6.1.0~), libreoffice-writer
+Recommends: libreoffice-core (>> 1:6.2.6)
+Filename: ./libreoffice-help-hu_6.2.6-0ubuntu0.16.04.1~lo1_all.deb
+Size: 3527276
+MD5sum: 5e21e24093fbc0203121aae8dc906df1
+SHA1: a8ef7df863905938ab8fc46570c42bcab5e2cf0f
+SHA256: 5e7bf36639c6ced14f496b02d1297251905dde4527b018cf46d1485817102f25
+SHA512: e29851fff9fdb7cb12753aa16a5b311efc89463c91348b7dbb228919436abfe842d2e958035a2301aad823b1054b88488fdcad5e5a4738f1f575851ea7195bdd
+Homepage: http://www.libreoffice.org
+Description: office productivity suite -- Hungarian help
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the help of LibreOffice in
+ Hungarian.
+
 Package: libreoffice-mysql-connector
 Architecture: amd64
 Version: 1:6.3.1~rc1-0ubuntu0.16.04.1~lo6
@@ -8890,6 +10706,32 @@ Description: LibreOffice extension for working with MediaWiki articles
  .
  This package contains an extension to create/edit/publish MediaWiki
  articles with LibreOffice
+
+Package: libreoffice-help-fi
+Architecture: all
+Version: 1:6.2.6-0ubuntu0.16.04.1~lo1
+Priority: optional
+Section: doc
+Source: libreoffice-l10n
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Installed-Size: 28135
+Provides: libreoffice-help (= 6.2)
+Depends: libreoffice-l10n-fi, libreoffice-common (>= 1:6.1.0~), libreoffice-writer
+Recommends: libreoffice-core (>> 1:6.2.6)
+Filename: ./libreoffice-help-fi_6.2.6-0ubuntu0.16.04.1~lo1_all.deb
+Size: 3435756
+MD5sum: fe8685fb48e588779d254fcf68aaa843
+SHA1: 481a53ff4431b7a30fb70ddee18af7bc393cd69c
+SHA256: bd17f584b46e1bf4ead74e29ed982ff8d10a9403d40db9d092b409cf5bcb4bf2
+SHA512: cea2ed4edfc45a4be48dc02df506cd4c7f849b3949736e16ec12ef4c65bff001093c8d267116b59d027b2218f7e145ce4c44219c75ee36163c046f6cf3674fff
+Homepage: http://www.libreoffice.org
+Description: office productivity suite -- Finnish help
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the help of LibreOffice in
+ Finnish.
 
 Package: libgimp2.0
 Architecture: amd64
@@ -9141,6 +10983,83 @@ Description: WINE Is Not An Emulator - runs MS Windows programs
  .
  This package contains the files needed to support 64-bit Windows
  programs.
+
+Package: libreoffice-help-gl
+Architecture: all
+Version: 1:6.2.6-0ubuntu0.16.04.1~lo1
+Priority: optional
+Section: doc
+Source: libreoffice-l10n
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Installed-Size: 27758
+Provides: libreoffice-help (= 6.2)
+Depends: libreoffice-l10n-gl, libreoffice-common (>= 1:6.1.0~), libreoffice-writer
+Recommends: libreoffice-core (>> 1:6.2.6)
+Filename: ./libreoffice-help-gl_6.2.6-0ubuntu0.16.04.1~lo1_all.deb
+Size: 3202036
+MD5sum: 20904f8b30ffab28b387b9e9af1bf413
+SHA1: 7e20a67a97f45dbdb31469070f1a9b6348cc42cc
+SHA256: 3ad9dccec39fbe6280e27f7837b0e2270da3ec960d34be12940c194a75b50fdf
+SHA512: 25de87394d01a373879b8acfd55087dc9e5b5e7817948348969d277df6ce150baaa9a4926fd77e9968a9fcc0d4f22d0633f4a2ccebaa04b370ee91a318f79213
+Homepage: http://www.libreoffice.org
+Description: office productivity suite -- Galician help
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the help of LibreOffice in
+ Galician.
+
+Package: libreoffice-gtk
+Architecture: all
+Version: 1:6.2.6-0ubuntu0.16.04.1~lo1
+Priority: extra
+Section: oldlibs
+Source: libreoffice
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Installed-Size: 12
+Depends: libreoffice-gtk2, libreoffice-common (= 1:6.2.6-0ubuntu0.16.04.1~lo1)
+Filename: ./libreoffice-gtk_6.2.6-0ubuntu0.16.04.1~lo1_all.deb
+Size: 2710
+MD5sum: 109a5164a6c2f263d4c465e982dc9b3b
+SHA1: 23fc096e3eced34890098b7b04a2c821ea4d41ac
+SHA256: a47ce1d2bdb38ff9e69b07228276ce12f84df49629e13a7fe6adc72ce29d2d61
+SHA512: 0eab8f14fe7479d8ae26f8f7b1843595c78c94a5af0c87d3d5c74686b1dce25303893454b3239340ca6d5fdf7a6f329ebc367f0bab8aa5c7441b0a3692f6c469
+Homepage: http://www.libreoffice.org
+Description: transitional package for LibreOffice gtk2 backend
+ This package used to contain the LibreOffice gtk2 backend. The package has
+ been renamed to libreoffice-gtk2 to distinguish it from the gtk3 backend. You
+ can safely remove this package.
+
+Package: libreoffice-core
+Architecture: amd64
+Version: 1:6.2.6-0ubuntu0.16.04.1~lo1
+Priority: optional
+Section: editors
+Source: libreoffice
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Installed-Size: 150456
+Provides: libreoffice-bundled
+Depends: fontconfig, fonts-opensymbol, libreoffice-common (>> 1:6.2.6), ure (>= 6.1.1~), libboost-date-time1.58.0, libboost-filesystem1.58.0, libboost-iostreams1.58.0, libboost-locale1.58.0, libc6 (>= 2.16), libcairo2 (>= 1.12.0), libclucene-contribs1v5 (>= 2.3.3.4), libclucene-core1v5 (>= 2.3.3.4), libcups2 (>= 1.7.0), libcurl3-gnutls (>= 7.16.2), libdbus-1-3 (>= 1.9.14), libdconf1 (>= 0.15.2), libepoxy0 (>= 1.0), libexpat1 (>= 2.0.1), libexttextcat-2.0-0 (>= 2.2-8), libfontconfig1 (>= 2.11.94), libfreetype6 (>= 2.3.5), libgcc1 (>= 1:3.4), libglib2.0-0 (>= 2.38.0), libgraphite2-3 (>= 1.2.2), libharfbuzz-icu0 (>= 0.9.42), libharfbuzz0b (>= 0.9.42), libhunspell-1.3-0 (>= 1.3.3), libhyphen0 (>= 2.7.1), libice6 (>= 1:1.0.0), libicu55 (>= 55.1-1~), libjpeg8 (>= 8c), liblangtag1 (>= 0.5.0), liblcms2-2 (>= 2.2+git20110628), libldap-2.4-2 (>= 2.4.7), libmythes-1.2-0, libneon27-gnutls, libnspr4 (>= 2:4.9-2~) | libnspr4-0d (>= 1.8.0.10), libnss3 (>= 2:3.16), libpng12-0 (>= 1.2.13-4), libpoppler58 (>= 0.41.0), libsm6, libstdc++6 (>= 5.2), libx11-6, libxext6, libxinerama1, libxml2 (>= 2.7.4), libxrandr2, libxrender1, libxslt1.1 (>= 1.1.25), uno-libs3 (>= 6.2.0~alpha), zlib1g (>= 1:1.1.4), librdf0 (>= 1.0.17)
+Recommends: libpaper-utils
+Conflicts: libreoffice-filter-binfilter, libreoffice-unbundled
+Breaks: browser-plugin-libreoffice, libreoffice-base (<< 1:6.2.6-0ubuntu0.16.04.1~lo1), libreoffice-calc (<< 1:6.2.6-0ubuntu0.16.04.1~lo1), libreoffice-common (<< 1:5.4.1), libreoffice-dev (<< 1:6.2.6-0ubuntu0.16.04.1~lo1), libreoffice-draw (<< 1:6.2.6-0ubuntu0.16.04.1~lo1), libreoffice-evolution (<< 1:6.2.6-0ubuntu0.16.04.1~lo1), libreoffice-gnome (<< 1:6.2.6-0ubuntu0.16.04.1~lo1), libreoffice-gtk (<< 1:6.2.6-0ubuntu0.16.04.1~lo1), libreoffice-gtk2 (<< 1:6.2.6-0ubuntu0.16.04.1~lo1), libreoffice-gtk3 (<< 1:6.2.6-0ubuntu0.16.04.1~lo1), libreoffice-impress (<< 1:6.2.6-0ubuntu0.16.04.1~lo1), libreoffice-kde (<< 1:6.2.6-0ubuntu0.16.04.1~lo1), libreoffice-kde4 (<< 1:6.2.6-0ubuntu0.16.04.1~lo1), libreoffice-kde5 (<< 1:6.2.6-0ubuntu0.16.04.1~lo1), libreoffice-officebean (<< 1:6.2.6-0ubuntu0.16.04.1~lo1), libreoffice-pdfimport (<< 1:5.4~), libreoffice-writer (<< 1:6.2.6-0ubuntu0.16.04.1~lo1)
+Replaces: libreoffice-common (<< 1:5.4.1), libreoffice-pdfimport (<< 1:5.4~)
+Filename: ./libreoffice-core_6.2.6-0ubuntu0.16.04.1~lo1_amd64.deb
+Size: 37692156
+MD5sum: 9b5fed7d22d4d3067f31d9882acd88ce
+SHA1: 1caf3414ba574ec77fa24c5d7ca7e59a0779091b
+SHA256: 8604275b84db740a99c09ed72f2848f620356ac884c519b6387e315d1c38b3ab
+SHA512: bcded270d681c0c578ca64468607557379cc42d242706bd0eeea45503a034bc3ca304501e4958c333107923c99c876fd20c35d314d344a595a928f0dc39e82db
+Homepage: http://www.libreoffice.org
+Description: office productivity suite -- arch-dependent files
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the architecture-dependent core files of
+ LibreOffice.  See the libreoffice package for more information.
 
 Package: thunderbird-locale-hu
 Architecture: amd64
@@ -9413,6 +11332,78 @@ Description: Transitional Norwegian language pack for Thunderbird
  This is a transitional package to ensure that upgrades work correctly.
  It can be safely removed
 
+Package: libreoffice-base
+Architecture: amd64
+Version: 1:6.2.6-0ubuntu0.16.04.1~lo1
+Priority: optional
+Section: database
+Source: libreoffice
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Installed-Size: 8745
+Depends: libreoffice-base-core (= 1:6.2.6-0ubuntu0.16.04.1~lo1), libreoffice-base-drivers (= 1:6.2.6-0ubuntu0.16.04.1~lo1), libreoffice-core (= 1:6.2.6-0ubuntu0.16.04.1~lo1), libc6 (>= 2.14), libgcc1 (>= 1:3.0), libstdc++6 (>= 5), uno-libs3 (>= 5.1.0~alpha), ure
+Recommends: libreoffice-writer, libreoffice-java-common (>= 1:6.2.6~), default-jre | sun-java6-jre | java6-runtime | jre
+Suggests: libreoffice-report-builder, unixodbc
+Replaces: libreoffice-common (<< 1:4.3.0~beta1)
+Filename: ./libreoffice-base_6.2.6-0ubuntu0.16.04.1~lo1_amd64.deb
+Size: 1719704
+MD5sum: fb7ecd090d09304f78b0cc240a78d78e
+SHA1: 917bed86ff51658ce776d59cbd6e2a16fb28222c
+SHA256: e792b5d1f481e7df9f84589a394c853c445797e14d7b342be37877f01e0a68f4
+SHA512: 4026b1b58237e9c15d031567a3444d443f7dff08989ada7a8f54f9296cb6516c57d2d24b46d6afc6a48b34ea093e7d6b2dac92ceecf09daaab9ec72340b7ab1a
+Homepage: http://www.libreoffice.org
+Description: office productivity suite -- database
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the database component for LibreOffice.
+
+Package: libreoffice-style-galaxy
+Architecture: all
+Version: 1:6.2.6-0ubuntu0.16.04.1~lo1
+Priority: extra
+Section: oldlibs
+Source: libreoffice
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Installed-Size: 12
+Depends: libreoffice-style-colibre
+Filename: ./libreoffice-style-galaxy_6.2.6-0ubuntu0.16.04.1~lo1_all.deb
+Size: 2642
+MD5sum: 041d927bcf27782eda6b350a4f1ff712
+SHA1: 2c24de80423544e9d23702cda020016b9308c4f1
+SHA256: b05a9d52057105200ec83145aa29f2c5407b2f062f57fd58540ac4604bfe040c
+SHA512: 1c7da37abb365f81a54aa9537e89e56812b5c4f1ec247cb1b5093b4d2b02e95b0f5e585ddc9b91f4a2d994f6f12616e33f0f46393839318c9817bfd525db7bbb
+Homepage: http://www.libreoffice.org
+Description: transitional package for Galaxy symbol style
+ You can safely remove this package.
+
+Package: libreoffice-help-om
+Architecture: all
+Version: 1:6.2.6-0ubuntu0.16.04.1~lo1
+Priority: optional
+Section: doc
+Source: libreoffice-l10n
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Installed-Size: 27956
+Provides: libreoffice-help (= 6.2)
+Depends: libreoffice-l10n-om, libreoffice-common (>= 1:6.1.0~), libreoffice-writer
+Recommends: libreoffice-core (>> 1:6.2.6)
+Filename: ./libreoffice-help-om_6.2.6-0ubuntu0.16.04.1~lo1_all.deb
+Size: 3537504
+MD5sum: c6935bbe3ce9e6699c4e9f768cd6fe1e
+SHA1: 7b17cce600f61a02c38ffd6888ef9d4f7523e107
+SHA256: b99ea77c0004e7b1d2335cb243af8cc97fb8f0268dc81b6a0c869284cf949ba6
+SHA512: ce225efe9008a4e1d5150be2569e9daa4d65ac7455f6dd96f5546f99c0e93623e9c74e2fc87c1257ac082099c27f9c81176b1dd6a393f84e91ea9a3b50212479
+Homepage: http://www.libreoffice.org
+Description: office productivity suite -- Oromo help
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the help of LibreOffice in
+ Oromo.
+
 Package: encryptpad
 Architecture: amd64
 Version: 0.4.0.4-1~webupd8~xenial0
@@ -9552,6 +11543,35 @@ Description: Caja extension to create custom actions (debugging symbols)
  automatically be used by gdb.
 Build-Ids: 02f9f4b0937f568ae9aaf9b3015cfb8fa3ad7470 488c5d0faee47dfe5af7c824eab0428c8989d16e 4a628f8281be726d4afd13a05e0250a7680b97ca 529574a7480aee8f119ae8f637857ae3b8fd8653 77185f276fe5b40a227123185573a0ed58a687b5 854cdd7f736ce01aeab1e01b77984ccc8b51285c 95ef35d30aecdd2b2be138970dedb17589fbf4c8 96ae6723ed402cd3bf3462f38d2e0a0aef9f4fa1 b850297b6058f7a243c50945df585204a7582bcd f7215fef072ab64dd3b89230615527fb80555471
 
+Package: libreoffice-style-sifr
+Architecture: all
+Version: 1:6.2.6-0ubuntu0.16.04.1~lo1
+Priority: optional
+Section: editors
+Source: libreoffice
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Installed-Size: 1645
+Provides: libreoffice-style, libreoffice-style-hicontrast
+Depends: libreoffice-style-breeze, libreoffice-common (= 1:6.2.6-0ubuntu0.16.04.1~lo1)
+Conflicts: libreoffice-style-hicontrast (<< 1:6.1.0~)
+Replaces: libreoffice-style-hicontrast (<< 1:6.1.0~)
+Enhances: libreoffice-core
+Filename: ./libreoffice-style-sifr_6.2.6-0ubuntu0.16.04.1~lo1_all.deb
+Size: 673244
+MD5sum: 69ecd1c9bfb56bbb365d6273ba497c12
+SHA1: 692d6c83f3a10f22cd6544ba6c25f5e1d287b57e
+SHA256: 3c4bb63268b487dfd5a34194e580f8e57d30989eb093145eb8ac3c3484f60018
+SHA512: cdf87775f72003f4a6961f6d198c1dd813fa168ba8e10e48d47a9a99eee45c7a7b5a713fe298f83210bc9a02c75b8c09289cdea3f39b66c325d0ce6e4d90ee1c
+Homepage: http://www.libreoffice.org
+Description: office productivity suite -- Sifr symbol style
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the "sifr" symbol style (an adaption of the Gnome
+ symbolic theme), needs to be manually  enabled in the LibreOffice option
+ menu.
+
 Package: libreoffice-librelogo
 Architecture: all
 Version: 1:6.3.1~rc1-0ubuntu0.16.04.1~lo6
@@ -9612,6 +11632,32 @@ Description: office productivity suite -- shared library
  If you need full Base functionality (or actual database drivers), please
  install libreoffice-base (and/or libreoffice-base-drivers and/o
  libreoffice-sdbc-*).
+
+Package: libreoffice-help-sl
+Architecture: all
+Version: 1:6.2.6-0ubuntu0.16.04.1~lo1
+Priority: optional
+Section: doc
+Source: libreoffice-l10n
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Installed-Size: 27840
+Provides: libreoffice-help (= 6.2)
+Depends: libreoffice-l10n-sl, libreoffice-common (>= 1:6.1.0~), libreoffice-writer
+Recommends: libreoffice-core (>> 1:6.2.6)
+Filename: ./libreoffice-help-sl_6.2.6-0ubuntu0.16.04.1~lo1_all.deb
+Size: 3346234
+MD5sum: 4f7730e5730a54c6f98dd7b27aff9a7b
+SHA1: f01a74e4dfa3179cf2e37971e4da23d685792d03
+SHA256: 92d1e662cf67e1e34f07e6b61ab5001f4a945ea662c0aa3741562f3e9f38d6b6
+SHA512: e1b10d4e4875ba020f92cdf6d4b423a39606a5ebb5ce8677a25dd341df7a9789fd4c21c1d5721b1b15252530116548e172dbfeede6fcaeb1cd18447506822353
+Homepage: http://www.libreoffice.org
+Description: office productivity suite -- Slovenian help
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the help of LibreOffice in
+ Slovenian.
 
 Package: winswitch
 Architecture: all
@@ -9684,6 +11730,32 @@ Description: cloud synchronization engine - CLI and Nautilus extension
  This package provides a command-line tool and a Nautilus extension that
  integrates the Dropbox web service with your GNOME Desktop.
 
+Package: libreoffice-help-et
+Architecture: all
+Version: 1:6.2.6-0ubuntu0.16.04.1~lo1
+Priority: optional
+Section: doc
+Source: libreoffice-l10n
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Installed-Size: 27358
+Provides: libreoffice-help (= 6.2)
+Depends: libreoffice-l10n-et, libreoffice-common (>= 1:6.1.0~), libreoffice-writer
+Recommends: libreoffice-core (>> 1:6.2.6)
+Filename: ./libreoffice-help-et_6.2.6-0ubuntu0.16.04.1~lo1_all.deb
+Size: 3292380
+MD5sum: 4db812d5661406621d89aaaeca22ba6f
+SHA1: b296d5e8c30b2499ed2712a1d6717e3b4a51e12e
+SHA256: 5ab577bac8ba86931cd9884ecfb9477bcf0cd19007ab8544177df7ae3b1cf544
+SHA512: ca5ca60e88a1f285aa6221153c8d3be4e7cd8188338ae088a57bb58ccbaaeb0b8c5626676a080aac4a0349ad69324374f2b108122934f3fd8ef7b9b86aa68af8
+Homepage: http://www.libreoffice.org
+Description: office productivity suite -- Estonian help
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the help of LibreOffice in
+ Estonian.
+
 Package: sharksetup
 Architecture: all
 Version: 1.7.2
@@ -9699,6 +11771,29 @@ SHA1: 4be601c4d4e2c3860802c1162f2aa378aa539dfe
 SHA256: fc996825f8f3ebcdbab10e3e96096a24e50b622670379023d510f9cce2f93e17
 SHA512: b6199e97c38df2ee409da7fa8738095c47f428c6b3a14678da66f1adede36deb97c9f1567f0e4fd361f25bd7e008eadf9471e1bafe4b5a757fff252d47bf451b
 Description: meta-package to install SharkLinux extra packages.
+
+Package: libreoffice-ogltrans
+Architecture: all
+Version: 1:6.2.6-0ubuntu0.16.04.1~lo1
+Priority: optional
+Section: oldlibs
+Source: libreoffice
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Installed-Size: 13
+Depends: libreoffice-impress (>= 1:6.2.0~beta1~), libreoffice-common (= 1:6.2.6-0ubuntu0.16.04.1~lo1)
+Filename: ./libreoffice-ogltrans_6.2.6-0ubuntu0.16.04.1~lo1_all.deb
+Size: 2834
+MD5sum: 9f0e31b14f286ff2c106d386ba7f2244
+SHA1: 879cc2cb5aba0a895603d5b9b0d4e9052a712b49
+SHA256: f224f681c1a48ce1820e0e6dfb5d81c43f2b0896e7bcb5f6270b89c9f113b1d0
+SHA512: 93087b36ef9bf5a9b732e129773f31cddecb5ec5103e47b622d1646650428891077c414f0ed4c5e34658cb76ac5d8113025697aa4f08afb72c7745d3fe892b1c
+Homepage: http://www.libreoffice.org
+Description: transitional package for libreoffice-ogltrans
+ This package used to contain the OpenGL slide transitions for LibreOffice
+ Impress.
+ That has been merged into libreoffice-impress directly and thus this package
+ can be safely removed.
 
 Package: mate-applets
 Architecture: amd64
@@ -9801,6 +11896,30 @@ Description: file manager for the MATE desktop (common files)
  .
  This package contains the architecture independent files.
 
+Package: liblibreofficekitgtk
+Architecture: amd64
+Version: 1:6.2.6-0ubuntu0.16.04.1~lo1
+Priority: optional
+Section: gnome
+Source: libreoffice
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Installed-Size: 248
+Depends: libreofficekit-data, libreoffice-core (= 1:6.2.6-0ubuntu0.16.04.1~lo1), libc6 (>= 2.14), libcairo2 (>= 1.10.0), libgcc1 (>= 1:3.0), libglib2.0-0 (>= 2.38.0), libgtk-3-0 (>= 3.18.0), libstdc++6 (>= 5.2)
+Recommends: libreoffice-gtk3
+Breaks: libreoffice-gtk3 (<< 1:5.2.0~)
+Replaces: libreoffice-gtk3 (<< 1:5.2.0~)
+Filename: ./liblibreofficekitgtk_6.2.6-0ubuntu0.16.04.1~lo1_amd64.deb
+Size: 76226
+MD5sum: b2972e05b41eea7b1f385c50ca419882
+SHA1: a3b2a910328feca6b63a0938958658f9dfcd1fff
+SHA256: e6529148541af4ac05b0a72aa2fdf9535daffbe7bbcb01c36069733e3e108258
+SHA512: b0166bfe909aaa4a8d3fe19a06482a52c9cd919aca9fa859fa690412a4c77b33bf44dc3625a8b19184459337f9a578472a0e1ec6b97de0f929e6d7d72d4b285e
+Homepage: http://www.libreoffice.org
+Description: GTK3 widget wrapping LibreOffice functionality
+ This package contains a (basic) GTK+ document viewer widget (used
+ by e.g. LOKDocView)
+
 Package: atril
 Architecture: amd64
 Version: 1.16.1-1~xenial3.1
@@ -9829,6 +11948,32 @@ Description: MATE document viewer
  When supported by the document, it also allows searching for text,
  copying text to the clipboard, hypertext navigation, and
  table-of-contents bookmarks.
+
+Package: libreoffice-wiki-publisher
+Architecture: all
+Version: 1.2.0+LibO6.2.6-0ubuntu0.16.04.1~lo1
+Priority: optional
+Section: misc
+Source: libreoffice (1:6.2.6-0ubuntu0.16.04.1~lo1)
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Installed-Size: 649
+Depends: libreoffice-core, libreoffice-java-common, default-jre | sun-java6-jre | java6-runtime | jre
+Suggests: mediawiki
+Enhances: libreoffice-writer
+Filename: ./libreoffice-wiki-publisher_1.2.0+LibO6.2.6-0ubuntu0.16.04.1~lo1_all.deb
+Size: 200056
+MD5sum: 6bf667cbd96a8e2bfe7820fa00fd5f6e
+SHA1: d7d0407849bd6ad58d0ce1c14a80e5b1c24ea057
+SHA256: 1360da411104ab4f45ccb643a6355253a8cea1f17bc70396ada0c85b72662e8e
+SHA512: 1c441730726c54d28a9ee045ef1187d1362f428afcefd4f4fc24520f29b95296790fbdf87051f3820641f86b4792cf7d305af42d1659a64829fcc5067cde5be1
+Homepage: http://extensions.services.openoffice.org/project/wikipublisher
+Description: LibreOffice extension for working with MediaWiki articles
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains an extension to create/edit/publish MediaWiki
+ articles with LibreOffice
 
 Package: python2-xpra
 Architecture: amd64
@@ -9922,6 +12067,33 @@ Description: Process viewer and system resource monitor for MATE
  MATE system monitor allows you to graphically view and manipulate the running
  processes on your system.  It also provides an overview of available
  resources such as CPU and memory.
+
+Package: python3-uno
+Architecture: amd64
+Version: 1:6.2.6-0ubuntu0.16.04.1~lo1
+Priority: optional
+Section: python
+Source: libreoffice
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Installed-Size: 513
+Depends: libreoffice-core (= 1:6.2.6-0ubuntu0.16.04.1~lo1), python3 (>= 3.5~), python3 (<< 3.6), python3.5, libc6 (>= 2.14), libgcc1 (>= 1:3.0), libpython3.5 (>= 3.5.0~b1), libstdc++6 (>= 5), uno-libs3 (>= 5.4.0~alpha), ure
+Conflicts: python-uno
+Replaces: libreoffice-common (<< 1:4.4.0~beta2), libreoffice-core (= 1:4.3.0~beta1-1)
+Enhances: libreoffice
+Filename: ./python3-uno_6.2.6-0ubuntu0.16.04.1~lo1_amd64.deb
+Size: 212702
+MD5sum: 2823ed7dfb0275a614a9294be88172ce
+SHA1: 730c71c7bc6e288950bfb8fd7dd9c1e7c9c0df98
+SHA256: 2c12080964b9ced3c87df67f9bfeb0459737553e338481e4bdb54935ade64463
+SHA512: 6f788809def4450d6418ac37fd4c629cb00e420f00f6cb76e7d395c6e39bf6b95b44d4e0b530f0bc70f5dd46c531bcd6161b5a9bf3d7d8442258174ecbea5b03
+Homepage: http://udk.openoffice.org/python/python-bridge.html
+Description: Python-UNO bridge
+ The Python-UNO bridge allows use of the standard LibreOffice API
+ with the Python scripting language. It additionally allows
+ others to develop UNO components in Python, thus Python UNO components
+ may be run within the LibreOffice process and can be called from C++
+ or the built in StarBasic scripting language.
 
 Package: libreoffice-writer
 Architecture: amd64
@@ -10276,6 +12448,32 @@ SHA512: a341d47c4f4df2bbc16231f85a4576e5e8d05ed1d1d2af31d339d2b3830bbfe249cafe0e
 Description: OCS-Store
  OCS-compatible Electron-based frontend.
 
+Package: libreoffice-style-breeze
+Architecture: all
+Version: 1:6.2.6-0ubuntu0.16.04.1~lo1
+Priority: optional
+Section: editors
+Source: libreoffice
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Installed-Size: 4166
+Provides: libreoffice-style
+Depends: libreoffice-style-tango, libreoffice-common (= 1:6.2.6-0ubuntu0.16.04.1~lo1)
+Suggests: breeze-icon-theme
+Enhances: libreoffice-core
+Filename: ./libreoffice-style-breeze_6.2.6-0ubuntu0.16.04.1~lo1_all.deb
+Size: 2017518
+MD5sum: 7f705fccc7c213b87af9b34e9fc95849
+SHA1: b64d1b2815fd98373d7db9e9d54cf0d01218d9ef
+SHA256: 2791225401892901ccdb3de3512993dfd56ae86603b0d79f114e808f2f031a86
+SHA512: a90620022e3c0277ed524236e7b1aa6d63a0a972b8f252cbda02eb72cea64cbac7ecc9417b8bf7f75257db4b963009109371e356a053f491004b3c611b0f6f57
+Homepage: http://www.libreoffice.org
+Description: office productivity suite -- Breeze symbol style
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the "breeze" symbol style, default style for KDE 5.
+
 Package: lxd-client
 Architecture: amd64
 Version: 2.21-0ubuntu2~16.04.1~ppa1
@@ -10446,6 +12644,31 @@ Description:
 License: MIT
 Vendor: Oguzhan Inan <oguzhan3488@gmail.com>
 
+Package: libreofficekit-data
+Architecture: all
+Version: 1:6.2.6-0ubuntu0.16.04.1~lo1
+Priority: optional
+Section: web
+Source: libreoffice
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Installed-Size: 19
+Depends: libreoffice-common (= 1:6.2.6-0ubuntu0.16.04.1~lo1)
+Recommends: gir1.2-lokdocview-0.1
+Filename: ./libreofficekit-data_6.2.6-0ubuntu0.16.04.1~lo1_all.deb
+Size: 4040
+MD5sum: 435d6d60a274f45bf4dfe7408e5b17f8
+SHA1: 29a7270fd59a5b972e06e30c305fb08ecf161b90
+SHA256: 2747cce66dbe35ca96190092725a332495f40f41b9039e6a07a72bbea202b789
+SHA512: 91542bd24446d0cee912c2c8f5b6dda0db11cdb8d8e7e8f75d8d5e401a3ba64fa4f4c08d0dce84c0d35acb1ad48e6efc468a418b358778374f0f8ad9c1ab53e4
+Homepage: http://www.libreoffice.org
+Description: common data for LOKDocView
+ LOKDocView is the GTK3 widget that wraps the libreoffice functionality and
+ exposes a simple API for applications to use this widget.
+ .
+ This package contains architecture-independent data (e.g. the selection
+ handlers).
+
 Package: unrar
 Architecture: amd64
 Version: 1:5.5.5-1~16.04.york0
@@ -10493,6 +12716,52 @@ Description: office productivity suite -- drawing
  .
  This package contains the drawing component for LibreOffice.
 
+Package: libreoffice-style-oxygen
+Architecture: all
+Version: 1:6.2.6-0ubuntu0.16.04.1~lo1
+Priority: extra
+Section: oldlibs
+Source: libreoffice
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Installed-Size: 12
+Depends: libreoffice-style-breeze
+Filename: ./libreoffice-style-oxygen_6.2.6-0ubuntu0.16.04.1~lo1_all.deb
+Size: 2640
+MD5sum: 54f3312585f0140b32b3a2973498d01a
+SHA1: fae53cefa04d87ca6cac70f3eb64a27c154e9a11
+SHA256: f808633cbb4ca24182921f93e87ee77aca8780751beb694008425f64e8cb9adb
+SHA512: f4402c010d8545431f523db2acf977663b30d20cb676353f06564ea765e609f549201e79994ece2967e4d133bd18c3709cd1e37ed2532eeeb9cee5771ddacb4b
+Homepage: http://www.libreoffice.org
+Description: transitional package for Oxygen symbol style
+ You can safely remove this package.
+
+Package: libreoffice-help-zh-tw
+Architecture: all
+Version: 1:6.2.6-0ubuntu0.16.04.1~lo1
+Priority: optional
+Section: doc
+Source: libreoffice-l10n
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Installed-Size: 30718
+Provides: libreoffice-help (= 6.2)
+Depends: libreoffice-l10n-zh-tw, libreoffice-common (>= 1:6.1.0~), libreoffice-writer
+Recommends: libreoffice-core (>> 1:6.2.6)
+Filename: ./libreoffice-help-zh-tw_6.2.6-0ubuntu0.16.04.1~lo1_all.deb
+Size: 4546102
+MD5sum: c29f0a0e52b1566c2ba96f5290f018ca
+SHA1: fdee31080547be354fd02f7bdf138722d60e58d5
+SHA256: e95e231e23bf8dfb88b23ef541e6b34ea522eb81ce69d8d4d1f0fd659a32b9d8
+SHA512: b427b9c98c77da862f8f8f428c0ba5d6398f588b63c13ea3b3605d3c6e955aeb704795dba198b69d7ce9e624c618f9dc69a9afbb50aab75831b8262f82ae7ffe
+Homepage: http://www.libreoffice.org
+Description: office productivity suite -- Chinese_traditional help
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the help of LibreOffice in
+ Chinese_traditional.
+
 Package: mate-utils-common
 Architecture: all
 Version: 1.16.1-1~xenial1.0
@@ -10522,6 +12791,32 @@ Description: MATE desktop utilities (common files)
     a file
  .
  This package contains the architecture independent files.
+
+Package: libreoffice-help-ja
+Architecture: all
+Version: 1:6.2.6-0ubuntu0.16.04.1~lo1
+Priority: optional
+Section: doc
+Source: libreoffice-l10n
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Installed-Size: 35280
+Provides: libreoffice-help (= 6.2)
+Depends: libreoffice-l10n-ja, libreoffice-common (>= 1:6.1.0~), libreoffice-writer
+Recommends: libreoffice-core (>> 1:6.2.6)
+Filename: ./libreoffice-help-ja_6.2.6-0ubuntu0.16.04.1~lo1_all.deb
+Size: 4976884
+MD5sum: 2049b72a710ea791f7cef4a5fe3c251b
+SHA1: ea19795a5a513b2bb0102a2984509dae85101831
+SHA256: 0fbc4b0984e74a5e90a8ec9592a0ca35b3af6bb346da05780913d4e1a9b60961
+SHA512: 6c19c92aeb9ec570948deb29e47ab05bbe6ee1780d755593ff07b9219f83b567c0e2e7f337819319d066f26d72a99a75525a39e12e44a6fb1ced78ba4f0f9c46
+Homepage: http://www.libreoffice.org
+Description: office productivity suite -- Japanese help
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the help of LibreOffice in
+ Japanese.
 
 Package: libmate-slab0
 Architecture: amd64
@@ -10574,6 +12869,32 @@ Description: PostgreSQL C client library
  libpq.
  .
  PostgreSQL is an object-relational SQL database management system.
+
+Package: libreoffice-help-pl
+Architecture: all
+Version: 1:6.2.6-0ubuntu0.16.04.1~lo1
+Priority: optional
+Section: doc
+Source: libreoffice-l10n
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Installed-Size: 28522
+Provides: libreoffice-help (= 6.2)
+Depends: libreoffice-l10n-pl, libreoffice-common (>= 1:6.1.0~), libreoffice-writer
+Recommends: libreoffice-core (>> 1:6.2.6)
+Filename: ./libreoffice-help-pl_6.2.6-0ubuntu0.16.04.1~lo1_all.deb
+Size: 3480266
+MD5sum: caa0d6018ecbfbcc2b06c4fe208a8975
+SHA1: d484d97f453d3325acfe6c15dfee5557f623aa6f
+SHA256: bc34abe44bbda6ae0c3ec489e600d508d720a3f8cba3181e1ac877da223e3442
+SHA512: 5197766614898c0975599ff7b1b10ff6617027fce4a49aca7dee85bf8bb8f0d706d30d534b22f03631586452e7728ce26a02e17a944320d92d4a86e756492a63
+Homepage: http://www.libreoffice.org
+Description: office productivity suite -- Polish help
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the help of LibreOffice in
+ Polish.
 
 Package: libbotan2.3-py2.7
 Architecture: all
@@ -10644,6 +12965,32 @@ Description: office productivity suite -- arch-independent Java support files
  .
  This package contains the architecture-independent files of
  the Java support for LibreOffice (Java classes, scripts, config snippets).
+
+Package: libreoffice-help-pt
+Architecture: all
+Version: 1:6.2.6-0ubuntu0.16.04.1~lo1
+Priority: optional
+Section: doc
+Source: libreoffice-l10n
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Installed-Size: 28474
+Provides: libreoffice-help (= 6.2)
+Depends: libreoffice-l10n-pt, libreoffice-common (>= 1:6.1.0~), libreoffice-writer
+Recommends: libreoffice-core (>> 1:6.2.6)
+Filename: ./libreoffice-help-pt_6.2.6-0ubuntu0.16.04.1~lo1_all.deb
+Size: 3213972
+MD5sum: 11a1a8e575a9da18ad08106899d5c482
+SHA1: dffe1cb4ef945e412494202607618641bdaf4f11
+SHA256: e777146546008b3ff5e2eb88aa4ca65ebbd80d2152d5e45cc1af24ce834fcf27
+SHA512: 85ee9f8bbff8148906d0199b5f7f16066f8c22142cd97397c41c2c7b865a02024a095dee1dcb56a30ec05b91e4031cf377fd3c5e7cdefd23ff7c359928714a62
+Homepage: http://www.libreoffice.org
+Description: office productivity suite -- Portuguese help
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the help of LibreOffice in
+ Portuguese.
 
 Package: gir1.2-eom
 Architecture: amd64
@@ -10862,6 +13209,31 @@ Description: WebTorrent, the streaming torrent client. For Mac, Windows, and Lin
  webtorrent-desktop: WebTorrent, the streaming torrent client. For Mac, Windows, and Linux.
 License: MIT
 
+Package: libreoffice-sdbc-hsqldb
+Architecture: amd64
+Version: 1:6.2.6-0ubuntu0.16.04.1~lo1
+Priority: optional
+Section: database
+Source: libreoffice
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Installed-Size: 387
+Depends: libreoffice-core (= 1:6.2.6-0ubuntu0.16.04.1~lo1), libreoffice-java-common (>= 1:6.2.6~), default-jre | sun-java6-jre | java6-runtime | jre, libhsqldb1.8.0-java, libc6 (>= 2.14), libgcc1 (>= 1:3.0), libstdc++6 (>= 5), uno-libs3 (>= 5.3.0~alpha), ure
+Enhances: libreoffice-base-drivers
+Filename: ./libreoffice-sdbc-hsqldb_6.2.6-0ubuntu0.16.04.1~lo1_amd64.deb
+Size: 108592
+MD5sum: 247f110246663dea673371a8faf10a84
+SHA1: a5195386d691b66b8dfe50299592081258410bd5
+SHA256: c68e3bdc52d5f2abfd4ae771c17eb00cb61016306074fb87075c1c0cc03515e8
+SHA512: 55437f926228206d8046d644deb2129c0c86afabf454a87361e6d19211ebad3cc606ddcf81350637f24f38ca2bae40c8cdff65d9100bffef7e478ce83b62fc2d
+Homepage: http://www.libreoffice.org
+Description: HSQLDB SDBC driver for LibreOffice
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ The HSQLDB SDBC Driver allows one to use the HSQLDB embedded database from
+ LibreOffice without any wrapper layer such as ODBC or JDBC.
+
 Package: lutris
 Architecture: amd64
 Version: 0.4.18.1
@@ -10912,6 +13284,35 @@ Build-Depends: libxslt,
                gettext,
                python-lxml
 
+Package: libreoffice-report-builder
+Architecture: all
+Version: 1:6.2.6-0ubuntu0.16.04.1~lo1
+Priority: optional
+Section: misc
+Source: libreoffice
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Installed-Size: 2493
+Provides: libreoffice-reportdesigner
+Depends: libreoffice-core, libreoffice-java-common, libreoffice-report-builder-bin (>= 1:6.2.6), libreoffice-common (= 1:6.2.6-0ubuntu0.16.04.1~lo1), libcommons-logging-java
+Enhances: libreoffice-base
+Filename: ./libreoffice-report-builder_6.2.6-0ubuntu0.16.04.1~lo1_all.deb
+Size: 2030420
+MD5sum: 47b4ea418e31ba0523e39bd64833809c
+SHA1: cfa017f5fa0bc603aab505a7f718845bf507edc9
+SHA256: 9b585fff3ba1348f2f8db3b68410017b0ad490acbb66a2006b8345659e3c7142
+SHA512: 1267cc5765bbec97e5a332f87bd57ee312fcaf3e9064ebb11e71edf938ee87a2b302038cebca92e1b97cbe547c06d8eaa0bcb75d9291b9d497e2d0faae025289
+Homepage: http://www.libreoffice.org
+Description: LibreOffice component for building database reports
+ LibreOffice is a full-featured office productivity suite that provides
+ a near drop-in replacement for Microsoft(R) Office.
+ .
+ This package contains the report builder:
+  "Create with the Sun Report Builder stylish, smart-looking database reports.
+  The flexible report editor can define group and page headers as well as
+  group and page footers and even calculation fields are available to
+  accomplish complex database reports."
+
 Package: thunderbird-locale-en-us
 Architecture: all
 Version: 1:60.0+build4-0ubuntu0.16.04.1
@@ -10951,6 +13352,54 @@ Description: Friendly downloader for YouTube and other sites
  Vimeo, Metacafe, Dailymotion and many other online video sites.
  It converts downloaded videos to MPEG4, MP3 or other formats
  in just one easy step.
+
+Package: libreoffice-kde
+Architecture: all
+Version: 1:6.2.6-0ubuntu0.16.04.1~lo1
+Priority: optional
+Section: oldlibs
+Source: libreoffice
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Installed-Size: 12
+Depends: libreoffice-kde4, libreoffice-common (= 1:6.2.6-0ubuntu0.16.04.1~lo1)
+Filename: ./libreoffice-kde_6.2.6-0ubuntu0.16.04.1~lo1_all.deb
+Size: 2698
+MD5sum: 811e8f6015546289761638d74f7624e2
+SHA1: e5f924cd0846db9e0dcc5e9e0478c53a741cb92e
+SHA256: e28fcdef6c8c5437faabd3a305ac7f3b8c19e6862b4691511fb555184a80178d
+SHA512: 9c8880dce4827ae35b4c7c3b241c1b1d7fe24f415aca118a598619e2473087cc13ced071f63e8aed74782da19849b60a04d1bb7de92aee55c77ed67d602280e1
+Homepage: http://www.libreoffice.org
+Description: transitional package for LibreOffice KDE integration
+ This package used to contain the LibreOffice KDE 4 backend. The package has
+ been renamed to libreoffice-kde4.
+ .
+ You can safely remove this package.
+
+Package: fonts-opensymbol
+Architecture: all
+Version: 2:102.10+LibO6.2.6-0ubuntu0.16.04.1~lo1
+Multi-Arch: foreign
+Priority: optional
+Section: fonts
+Source: libreoffice (1:6.2.6-0ubuntu0.16.04.1~lo1)
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Installed-Size: 433
+Provides: ttf-opensymbol
+Recommends: fontconfig
+Replaces: ttf-opensymbol
+Filename: ./fonts-opensymbol_102.10+LibO6.2.6-0ubuntu0.16.04.1~lo1_all.deb
+Size: 293238
+MD5sum: 0dc03f6ab1ff258a3e56cb9f5e7a0a09
+SHA1: 1c771b78ab921e25e2daad578169e11c83a67461
+SHA256: 1c85476ccaf773980b04ba89b8ccdf72110ff36cb1cf683cf88b3de64e3c40ad
+SHA512: e5d8814c2ed012e2c2e4b4978ea2cdd9581af7e367804a816180f2aac4c1c714058b8486fe5a6b97298dc63ac1d5d909e80655d5853cb048cf81bd1537385d95
+Homepage: http://www.libreoffice.org
+Description: OpenSymbol TrueType font
+ This package contains the OpenSymbol TrueType font included in
+ LibreOffice. This font contains symbols (like fonts as Wingdings(tm)),
+ bullets (needed for bullets in LibreOffice) and non-latin character
 
 Package: mate-icon-theme-faenza
 Architecture: all
