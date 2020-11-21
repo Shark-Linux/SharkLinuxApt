@@ -5988,26 +5988,6 @@ Description: MATE document viewer (common files)
  .
  This package contains the architecture independent files.
 
-Package: google-chrome-stable
-Architecture: amd64
-Version: 87.0.4280.66-1
-Priority: optional
-Section: web
-Maintainer: Chrome Linux Team <chromium-dev@chromium.org>
-Installed-Size: 233097
-Provides: www-browser
-Pre-Depends: dpkg (>= 1.14.0)
-Depends: ca-certificates, fonts-liberation, libasound2 (>= 1.0.16), libatk-bridge2.0-0 (>= 2.5.3), libatk1.0-0 (>= 2.2.0), libatspi2.0-0 (>= 2.9.90), libc6 (>= 2.16), libcairo2 (>= 1.6.0), libcups2 (>= 1.4.0), libdbus-1-3 (>= 1.5.12), libdrm2 (>= 2.4.38), libexpat1 (>= 2.0.1), libgbm1 (>= 8.1~0), libgcc1 (>= 1:3.0), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.39.4), libgtk-3-0 (>= 3.9.10), libnspr4 (>= 2:4.9-2~), libnss3 (>= 2:3.22), libpango-1.0-0 (>= 1.14.0), libpangocairo-1.0-0 (>= 1.14.0), libx11-6 (>= 2:1.4.99.1), libx11-xcb1, libxcb1 (>= 1.9.2), libxcomposite1 (>= 1:0.3-1), libxdamage1 (>= 1:1.1), libxext6, libxfixes3, libxkbcommon0 (>= 0.4.1), libxrandr2, wget, xdg-utils (>= 1.0.2)
-Recommends: libu2f-udev, libvulkan1
-Filename: ./google-chrome-stable_current_amd64.deb
-Size: 72726412
-MD5sum: b8d0c8661898a22037ad2feb4fb71465
-SHA1: b273469a938cabf5bf115c3f67c97f279c7cb55f
-SHA256: e7e4c6a2108140c572562867f522d0311a25ce03ea36c5452cb8431865871226
-SHA512: c4c173a69d59c05f5b3b159fb3ed3a6b09e880083adfe07cea45b9f7a592dc3eefca70676b5bae66e679f1030c7459523f99dd61c9a28f676bc7a91d5f72662d
-Description: The web browser from Google
- Google Chrome is a browser that combines a minimal design with sophisticated technology to make the web faster, safer, and easier.
-
 Package: libjavascriptcoregtk-3.0-0
 Architecture: amd64
 Version: 2.4.11-0ubuntu0.1
@@ -8943,6 +8923,26 @@ SHA1: 12998d2c3e9f5062dd0f4a03d4aa2608c71a05b5
 SHA256: de80ce2e56e329390d0cdbf50231aa876af2bcee11f0097b7c93b594a057b183
 SHA512: 20437e7ab5901d0d2ef1daf2ce912ff6f2552a9b469bbf156dd8a5eaba0a0c8595098b647eb2bbf86948cef236bbd939c80e2616c783f4c1313926bd2e026d61
 Description: meta-package for games to be include with SharkOS .
+
+Package: google-chrome-stable
+Architecture: amd64
+Version: 87.0.4280.66-1
+Priority: optional
+Section: web
+Maintainer: Chrome Linux Team <chromium-dev@chromium.org>
+Installed-Size: 233097
+Provides: www-browser
+Pre-Depends: dpkg (>= 1.14.0)
+Depends: ca-certificates, fonts-liberation, libasound2 (>= 1.0.16), libatk-bridge2.0-0 (>= 2.5.3), libatk1.0-0 (>= 2.2.0), libatspi2.0-0 (>= 2.9.90), libc6 (>= 2.16), libcairo2 (>= 1.6.0), libcups2 (>= 1.4.0), libdbus-1-3 (>= 1.5.12), libdrm2 (>= 2.4.38), libexpat1 (>= 2.0.1), libgbm1 (>= 8.1~0), libgcc1 (>= 1:3.0), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.39.4), libgtk-3-0 (>= 3.9.10), libnspr4 (>= 2:4.9-2~), libnss3 (>= 2:3.22), libpango-1.0-0 (>= 1.14.0), libpangocairo-1.0-0 (>= 1.14.0), libx11-6 (>= 2:1.4.99.1), libx11-xcb1, libxcb1 (>= 1.9.2), libxcomposite1 (>= 1:0.3-1), libxdamage1 (>= 1:1.1), libxext6, libxfixes3, libxkbcommon0 (>= 0.4.1), libxrandr2, wget, xdg-utils (>= 1.0.2)
+Recommends: libu2f-udev, libvulkan1
+Filename: ./google-chrome-stable_87.0.4280.66-1_amd64.deb
+Size: 72726412
+MD5sum: b8d0c8661898a22037ad2feb4fb71465
+SHA1: b273469a938cabf5bf115c3f67c97f279c7cb55f
+SHA256: e7e4c6a2108140c572562867f522d0311a25ce03ea36c5452cb8431865871226
+SHA512: c4c173a69d59c05f5b3b159fb3ed3a6b09e880083adfe07cea45b9f7a592dc3eefca70676b5bae66e679f1030c7459523f99dd61c9a28f676bc7a91d5f72662d
+Description: The web browser from Google
+ Google Chrome is a browser that combines a minimal design with sophisticated technology to make the web faster, safer, and easier.
 
 Package: launchpad-getkeys
 Architecture: all
