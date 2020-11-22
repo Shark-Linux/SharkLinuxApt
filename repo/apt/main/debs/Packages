@@ -17,6 +17,30 @@ Description: Irish language pack for Thunderbird
  This package contains Irish translations and search plugins
  for Thunderbird
 
+Package: megasync
+Architecture: amd64
+Version: 4.3.7-1.1
+Priority: normal
+Section: Tools
+Maintainer: MEGA Linux Team <linux@mega.co.nz>
+Installed-Size: 62179
+Depends: libc-ares2 (>= 1.7.4), libc6 (>= 2.17), libcrypto++9v5, libdrm2 (>= 2.4.62), libfontconfig1 (>= 2.11.94), libfreetype6 (>= 2.6), libgcc1 (>= 1:3.4), libgl1-mesa-glx | libgl1, libmediainfo0v5 (>= 0.7.56), libpng12-0 (>= 1.2.13-4), libraw15 (>= 0.16.0), libsqlite3-0 (>= 3.5.9), libssl1.0.0 (>= 1.0.2~beta3), libstdc++6 (>= 5.2), libx11-6, libx11-xcb1, libxcb1 (>= 1.8), libxkbcommon-x11-0 (>= 0.5.0), libxkbcommon0 (>= 0.5.0), libzen0v5 (>= 0.4.31-2~), zlib1g (>= 1:1.1.4), apt-transport-https
+Filename: ./megasync_4.3.7-1.1_amd64.deb
+Size: 20750388
+MD5sum: fb515d7766fc97a95699066ae3f5b392
+SHA1: 0edf78426c691b650da0d16550103a1920d86a24
+SHA256: 3d6bff3ffc83ceb04eb5c90c4bb90e5b370ae552bd6aeb07ca2240f4bd1a09d0
+SHA512: 2bbb1520673b730fb5e317add275f4f873c1b080cd8a98dc15450f4ac61cce35c26914ed34bb0e1bc70de8ff8389649b6a20ec8a0d9662ae83d984d3bde26b36
+Description: Easy automated syncing between your computers and your MEGA cloud drive
+ Secure:
+ Your data is encrypted end to end. Nobody can intercept it while in storage or in transit.
+ Flexible:
+ Sync any folder from your PC to any folder in the cloud. Sync any number of folders in parallel.
+ Fast:
+ Take advantage of MEGA's high-powered infrastructure and multi-connection transfers.
+ Generous:
+ Store up to 50 GB for free!
+
 Package: nodejs
 Architecture: amd64
 Version: 6.12.0-1nodesource1
@@ -1205,30 +1229,6 @@ Description: JavaScript script support provider for LibreOffice scripting framew
  .
  This package contains the script provider to support JavaScript.
 
-Package: megasync
-Architecture: amd64
-Version: 4.3.1+1.1
-Priority: normal
-Section: Tools
-Maintainer: MEGA Linux Team <linux@mega.co.nz>
-Installed-Size: 61367
-Depends: libc-ares2 (>= 1.7.4), libc6 (>= 2.17), libcrypto++9v5, libdrm2 (>= 2.4.62), libfontconfig1 (>= 2.11.94), libfreetype6 (>= 2.6), libgcc1 (>= 1:3.4), libgl1-mesa-glx | libgl1, libmediainfo0v5 (>= 0.7.56), libpng12-0 (>= 1.2.13-4), libraw15 (>= 0.16.0), libsqlite3-0 (>= 3.5.9), libssl1.0.0 (>= 1.0.2~beta3), libstdc++6 (>= 5.2), libx11-6, libx11-xcb1, libxcb1 (>= 1.8), libxkbcommon-x11-0 (>= 0.5.0), libxkbcommon0 (>= 0.5.0), libzen0v5 (>= 0.4.31-2~), zlib1g (>= 1:1.1.4), apt-transport-https
-Filename: ./megasync_4.3.1+1.1_amd64.deb
-Size: 20100064
-MD5sum: b15e03402750b6e292dc9da41b8d5807
-SHA1: 8fb177bcb2db606f1d1a57080da84715665e935d
-SHA256: 7207bacd841a0c6badaf43da1b103dc0cd3a976c2bf1386389d6e318e92e87fd
-SHA512: 605470c3ca104bab49ca7a95e9fd2dda0b22d62f0d6b106e2634ff96ac51b0fcbdafc2ba1f6f391843f9e8fbc281be007c70810c11d11f71daa53159c1726b7d
-Description: Easy automated syncing between your computers and your MEGA cloud drive
- Secure:
- Your data is encrypted end to end. Nobody can intercept it while in storage or in transit.
- Flexible:
- Sync any folder from your PC to any folder in the cloud. Sync any number of folders in parallel.
- Fast:
- Take advantage of MEGA's high-powered infrastructure and multi-connection transfers.
- Generous:
- Store up to 50 GB for free!
-
 Package: libqt4-opengl
 Architecture: amd64
 Version: 4:4.8.7+dfsg-5ubuntu2
@@ -1473,6 +1473,28 @@ Description: office productivity suite -- arch-independent files
  This package contains the architecture-independent files of
  LibreOffice.
 
+Package: megacmd
+Architecture: amd64
+Version: 1.4.0-3.1
+Priority: normal
+Section: Tools
+Maintainer: MEGA Linux Team <linux@mega.co.nz>
+Installed-Size: 30977
+Depends: libc-ares2 (>= 1.7.4), libc6 (>= 2.16), libcrypto++9v5, libgcc1 (>= 1:3.0), libmediainfo0v5 (>= 0.7.56), libpcre3, libpcrecpp0v5 (>= 7.7), libssl1.0.0 (>= 1.0.2~beta3), libstdc++6 (>= 5.2), libzen0v5 (>= 0.4.31-2~), zlib1g (>= 1:1.2.0), apt-transport-https
+Filename: ./megacmd_1.4.0-3.1_amd64.deb
+Size: 7510334
+MD5sum: e632e3cd277a3afa83d74ff19f6ba634
+SHA1: dac746668b22d4117640e62549fe9824ddd1e1e4
+SHA256: 16145a34cbda46aa2e3bf755f25e1042459ad0383e6d7c7a7a6b7bb9256fcbb1
+SHA512: a2990b0e1d30e7f1357cc51c8817373c2fb0b2f732f8e56da2d1643f425a86a90f8457e76037fd5bcfd4cfc7ffd2f44b0f88c330bc2ea847d89ab422b5bd1447
+Description: MEGA Command Line Interactive and Scriptable Application
+ MEGAcmd provides non UI access to MEGA services.
+ It intends to offer all the functionality
+ with your MEGA account via shell interaction.
+ It features 2 modes of interaction
+  - interactive. A shell to query your actions
+  - scriptable. A way to execute commands from a shell/a script/another program.
+
 Package: thunderbird-locale-pt-br
 Architecture: all
 Version: 1:60.0+build4-0ubuntu0.16.04.1
@@ -1700,6 +1722,24 @@ Description: office productivity suite -- English_british help
  .
  This package contains the help of LibreOffice in
  English_british.
+
+Package: vagrant
+Architecture: amd64
+Version: 1:2.2.9
+Priority: extra
+Section: default
+Maintainer: HashiCorp <support@hashicorp.com>
+Installed-Size: 122753
+Filename: ./vagrant_2.2.9_x86_64.deb
+Size: 42978828
+MD5sum: 6c7a307f59d2c7c0abc187d0cd79fda2
+SHA1: 00de8ec88b9f5bd607012973ca35d1813c8f4bc3
+SHA256: d06038b68a97a38369220838f0d21c50f9f09b693cf0458cad872864bb7ee09b
+SHA512: d362d5a0d29cc766a6f1cc79ecac62386f89a031111f014314041f47397a14561bad9262ea40aaafcd004df621ad1040275b46f51761fe6fdc2a2acb022471f4
+Homepage: https://www.vagrantup.com/
+Description: no description given
+License: unknown
+Vendor: root@vagrant
 
 Package: mate-themes
 Architecture: all
@@ -3894,6 +3934,41 @@ Description: MATE Desktop Environment (metapackage)
  It also suggests a few non-MATE standard desktop applications like an
  internet browser, a mail reader and a network management applet.
 
+Package: syncthing-gtk
+Architecture: all
+Version: 0.9.4.4-1~webupd8~xenial0
+Priority: extra
+Section: gnome
+Maintainer: Alin Andrei <webupd8@gmail.com>
+Installed-Size: 1608
+Depends: python (>= 2.7), python (<< 2.8), python-gobject | python-gi, python-dateutil, libappindicator3-1, libgtk-3-0, gir1.2-gtk-3.0, gir1.2-glib-2.0, gir1.2-appindicator3-0.1, python-notify, python-gi-cairo, psmisc, gir1.2-rsvg-2.0, gir1.2-notify-0.7, python-bcrypt
+Recommends: python-pyinotify
+Suggests: python-nautilus | python-nemo | nemo-python | python-caja
+Breaks: syncthing-gui
+Replaces: syncthing-gui
+Filename: ./syncthing-gtk_0.9.4.4-1~webupd8~xenial0_all.deb
+Size: 464986
+MD5sum: b670884513d611e6e8c8a5f81606a3f1
+SHA1: 693f32f01266aa45f605b8fdeb6f32f241035461
+SHA256: 3d24880af0f435eb6ddca2c1eefb047520353ab2dff2cbedd03ee0507129cd0d
+SHA512: d52f952726e167d01c60d326511a40d1cd523723e8f94c59130205ae76bb854e294f29b3c0d4608663e3f742b74196fe557663f1dacd6e6e820b2ed7f7163018
+Homepage: https://github.com/kozec/syncthing-gui
+Description: GUI for Syncthing
+ Syncthing GUI is a GTK3 & python based GUI and notification
+ area icon for Syncthing.
+ .
+ Supported syncthing features:
+ - Everything what WebUI can display
+ - Adding / editing / deleting nodes
+ - Adding / editing / deleting repositories
+ - Restart / shutdown server
+ - Editing daemon settings
+ .
+ Additional features:
+ - Running Syncthing daemon in background
+ - Half-automatic setup for new nodes and repositories
+ - Filesystem watching and instant synchronization using inotify
+
 Package: nordvpn-sl
 Architecture: all
 Version: 1.0.0
@@ -5379,6 +5454,31 @@ Description: Default settings for MATE on Debian
  This package comes together with mate-session-manager as provided by upstream
  but does a little tweaking here and there to provide best experience of the
  MATE desktop environment on Debian systems.
+
+Package: dupeguru
+Architecture: amd64
+Version: 4.0.4-0~eugenesan~xenial1
+Priority: extra
+Section: devel
+Maintainer: Virgil Dupras <hsoft@hardcoded.net>, Eugene San (eugenesan) <eugenesan@gmail.com>
+Installed-Size: 4417
+Provides: dupeguru-me, dupeguru-pe, dupeguru-se
+Depends: libc6 (>= 2.4), python3 (>= 3.4), python3-pyqt5
+Conflicts: dupeguru-me, dupeguru-pe, dupeguru-se
+Replaces: dupeguru-me, dupeguru-pe, dupeguru-se
+Filename: ./dupeguru_4.0.4-0~eugenesan~xenial1_amd64.deb
+Size: 708914
+MD5sum: 16bb83c5460958035aa6d9cf4cb77c35
+SHA1: 8d1aa8f2d769286ddbeaae55a4f3ef7a2dc3d9e8
+SHA256: 1d9706e0f75b07ac72258272051aeb1ac2038cd1d957dc251173929820688405
+SHA512: fbca8d5677052ac55d8be7e1c95610b8fb8e57bfe35207e6949f79db2a442a553d7054902d4c2e38a2364bc577cfe41a4cce375efe88c73d652153834b44d35e
+Homepage: https://dupeguru.voltaicideas.net
+Description: dupeGuru
+ dupeGuru is a cross-platform (Linux and OS X) GUI tool to find duplicate files in a system.
+ It's written mostly in Python 3 and has the peculiarity of using multiple GUI toolkits,
+ all using the same core Python code.
+ On OS X, the UI layer is written in Objective-C and uses Cocoa.
+ On Linux, it's written in Python and uses Qt5.
 
 Package: audacious-plugins-data
 Architecture: all
@@ -8130,28 +8230,6 @@ Description: MATE panel indicator applet
  icon and associated menu, displayed (usually) in the desktop panel.
  Existing indicators include the Message Menu, Battery Menu and Sound
  menu.
-
-Package: megacmd
-Architecture: amd64
-Version: 1.2.0-5.1
-Priority: normal
-Section: Tools
-Maintainer: MEGA Linux Team <linux@mega.co.nz>
-Installed-Size: 30142
-Depends: libc-ares2 (>= 1.7.4), libc6 (>= 2.16), libcrypto++9v5, libgcc1 (>= 1:3.0), libmediainfo0v5 (>= 0.7.56), libpcre3, libpcrecpp0v5 (>= 7.7), libssl1.0.0 (>= 1.0.2~beta3), libstdc++6 (>= 5.2), libzen0v5 (>= 0.4.31-2~), zlib1g (>= 1:1.2.0.2), apt-transport-https
-Filename: ./megacmd_1.2.0-5.1_amd64.deb
-Size: 7232990
-MD5sum: 73a6ea39fd3bc54546cfadf26766c47f
-SHA1: ab46100b915a3caff01bf30219029b7f63992bbc
-SHA256: 3f5426ed95f6c37371d18d0139fd423cabdeb7e75d47470a9168b606f72482ae
-SHA512: 4e4f16ae3e868b366617db616dd1bf07475595760836f945c28186a3e1545e6495f4d98a7895ceb4a786af577b464010a33f87dd3ca6f21b8194d866d403513c
-Description: MEGA Command Line Interactive and Scriptable Application
- MEGAcmd provides non UI access to MEGA services.
- It intends to offer all the functionality
- with your MEGA account via shell interaction.
- It features 2 modes of interaction
-  - interactive. A shell to query your actions
-  - scriptable. A way to execute commands from a shell/a script/another program.
 
 Package: libzip4
 Architecture: amd64
