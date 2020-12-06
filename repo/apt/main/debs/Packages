@@ -3748,18 +3748,18 @@ Description: X Resolution Probe
 
 Package: shark-patch
 Architecture: all
-Version: 3.7.1
+Version: 3.8
 Multi-Arch: foreign
 Priority: optional
 Section: base
 Maintainer: SharkLinux (SharkOS) <sharklinux@linuxmail.org>
 Depends: ubuntu-minimal
 Filename: ./shark-patch.deb
-Size: 521384
-MD5sum: e92ef25508910315e39fe5c4a5730d8f
-SHA1: 6955ab902c68eb66fbe0de217de781c254e63963
-SHA256: fdc8fa46540217d69067b7c5e4825fb7975026d70c6a47e7d0abbc34ea9930b4
-SHA512: 16b8f2b05d2a3b0e6ddc8bceb8625ac2a8602d51734ae222f1a66ba039f03e2bb63650e9de30b8b7bca6894f261b03d0ce37b6b3a1105ead883e165c38860649
+Size: 521442
+MD5sum: 2d39f9efc08beee8f576c35aea384a6e
+SHA1: 0609a06d3452fbf809e3097e96a2b76bed6919f3
+SHA256: fc93fb5a40060efec3c3837c5e0ebcc584f4668aad32a97ef0133f37f25a10d9
+SHA512: 0ca2d34a58cdc0f57ea0ff883f5a00bc64b1f5421e10f76d5a373eec1b1fd57864dcc4ed967ea58149b9c3d50ac8dd86dedc71c6c417e576b74fa6cec0e47613
 Description: SharkLinux patches
  This package includes bug fixes.
 
