@@ -3748,18 +3748,18 @@ Description: X Resolution Probe
 
 Package: shark-patch
 Architecture: all
-Version: 3.8
+Version: 3.9
 Multi-Arch: foreign
 Priority: optional
 Section: base
 Maintainer: SharkLinux (SharkOS) <sharklinux@linuxmail.org>
 Depends: ubuntu-minimal
 Filename: ./shark-patch.deb
-Size: 521442
-MD5sum: 2d39f9efc08beee8f576c35aea384a6e
-SHA1: 0609a06d3452fbf809e3097e96a2b76bed6919f3
-SHA256: fc93fb5a40060efec3c3837c5e0ebcc584f4668aad32a97ef0133f37f25a10d9
-SHA512: 0ca2d34a58cdc0f57ea0ff883f5a00bc64b1f5421e10f76d5a373eec1b1fd57864dcc4ed967ea58149b9c3d50ac8dd86dedc71c6c417e576b74fa6cec0e47613
+Size: 521420
+MD5sum: f478d9e5323d1a419c2ab768b4dcf351
+SHA1: 3adefb9666ba7534eedab5a3e2749a6586b0d4b8
+SHA256: e4525686170eb4b34fb21dcb14167527526f52a007590a8a77f842a894a079c7
+SHA512: f3b14dc12445af9ae0e717dd1c2b01806bedcb179af21db942830dd4d2cb8d9306cece30419d220c1024c011db1253e1c8c6640121ed81d4ebfc28a8b709c252
 Description: SharkLinux patches
  This package includes bug fixes.
 
@@ -7477,18 +7477,18 @@ Description: Transitional package for unavailable language
 
 Package: sharklinux-os
 Architecture: amd64
-Version: 5.6
+Version: 5.6.1
 Multi-Arch: foreign
 Priority: optional
 Section: base
 Maintainer: SharkLinux (SharkOS) <sharklinux@linuxmail.org>
 Depends: sharklinux-core, sharklinux-default-settings, vagrant, sharklinux-themes, shark-patch, xcowsay, aview, rar, cutieshark,  unrar, sharklxd
 Filename: ./sharklinux-os.deb
-Size: 1353234
-MD5sum: a565bbc4c8a4d33b3bcc50b0df7711fc
-SHA1: 4c46c2bf5efcaab61b601663b0103f627981c31a
-SHA256: d9565d3151da2a55530d6232604303420bb044a643a2ad84ea22bba41fdddf7a
-SHA512: dda51a8da81b7ecd05f3508352699ac0521b5fcd0a1ae14de3ba5ae4fc5080ffbb19a853654d150fc0b89e7eb0dcacf54bfa2c61ca4a4942129e36ac6b785461
+Size: 1353158
+MD5sum: 8a5de59964beac5bc70a23672e8ffe7c
+SHA1: 4c02ce640259705b5afe4aaa933c4cc0e382f5e5
+SHA256: 26bcd170db0b6ec30c564ba9ebf2253cbbf317344f0486bf6bdafd83a86385f4
+SHA512: 5f3be821b9319a0c269da1a7e369567e332cc00736dabc2e95d0cfa57e8a1c3cc6432e498a76f0944566e13d706753a3c088b24d93c320104f0fda36db41b3ef
 Description: meta-package to build SharkOS over a base xenial system.
 
 Package: freefilesync
