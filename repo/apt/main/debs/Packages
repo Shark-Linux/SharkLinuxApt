@@ -3755,11 +3755,11 @@ Section: base
 Maintainer: SharkLinux (SharkOS) <sharklinux@linuxmail.org>
 Depends: ubuntu-minimal
 Filename: ./shark-patch.deb
-Size: 521420
-MD5sum: f478d9e5323d1a419c2ab768b4dcf351
-SHA1: 3adefb9666ba7534eedab5a3e2749a6586b0d4b8
-SHA256: e4525686170eb4b34fb21dcb14167527526f52a007590a8a77f842a894a079c7
-SHA512: f3b14dc12445af9ae0e717dd1c2b01806bedcb179af21db942830dd4d2cb8d9306cece30419d220c1024c011db1253e1c8c6640121ed81d4ebfc28a8b709c252
+Size: 521342
+MD5sum: d32f2b3b3357969864bb2b2203bb8946
+SHA1: c61c6e0e76104bcf45d7b406c9c065d3b01be685
+SHA256: 28be49f1e4c402c95c3a10aa745b308705c64169e615856dad4b1613b308eeb5
+SHA512: aa9a8b82503fff830895248a75a25de862497518816371c2da42ea9a5fc10635e9eb91fffb287db9652db0b651f8bacac8e71501374d606d1e9420a7c2c5de95
 Description: SharkLinux patches
  This package includes bug fixes.
 
